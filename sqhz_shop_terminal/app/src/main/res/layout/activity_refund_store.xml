@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:orientation="vertical">
+
+    <include layout="@layout/titlebar"/>
+
+    <LinearLayout
+        android:id="@+id/ll_store_main"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:gravity="center_vertical"
+            android:paddingLeft="10dp"
+            android:text="请选择入库仓库"
+            android:textColor="@color/text_black_212121"
+            android:textSize="@dimen/ts28"/>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="65dp"
+            android:background="@color/white"
+            android:paddingLeft="10dp"
+            android:paddingRight="10dp">
+
+            <TextView
+                android:id="@+id/tv_store_title"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:text="正常品入库仓库"
+                android:textColor="@color/text_black_212121"
+                android:textSize="@dimen/ts30"/>
+
+            <TextView
+                android:id="@+id/tv_select_store"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_toRightOf="@id/tv_store_title"
+                android:gravity="center_vertical|right"
+                android:hint="请选择退货仓库"
+                android:text=""
+                android:textSize="@dimen/ts26"/>
+
+            <ImageView
+                android:layout_width="10dp"
+                android:layout_height="10dp"
+                android:layout_alignParentBottom="true"
+                android:layout_alignParentRight="true"
+                android:layout_marginBottom="12dp"
+                android:src="@mipmap/right_down_corner"/>
+
+        </RelativeLayout>
+
+        <TextView
+            android:id="@+id/tv_desc"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:paddingLeft="10dp"
+            android:paddingRight="10dp"
+            android:text="@string/return_goods_desc"
+            android:textColor="@color/text_gray"
+            android:textSize="@dimen/ts24"/>
+
+        <Button
+            android:id="@+id/btn_submit"
+            android:layout_width="190dp"
+            android:layout_height="35dp"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="140dp"
+            android:background="@drawable/bg_submit_blue"
+            android:text="提交"
+            android:textColor="@color/white"
+            android:textSize="@dimen/ts30"/>
+
+    </LinearLayout>
+
+
+</LinearLayout>

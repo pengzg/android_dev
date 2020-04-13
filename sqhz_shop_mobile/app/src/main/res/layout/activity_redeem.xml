@@ -1,0 +1,174 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:orientation="vertical">
+
+    <include layout="@layout/titlebar"/>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0.5dp"
+        android:background="@color/line_gray"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white"
+        android:orientation="vertical"
+        android:padding="@dimen/common_margin">
+
+        <TextView
+            android:id="@+id/tv_action_name"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="活动名称:大转盘得PhoneX"
+            android:textColor="@color/black"
+            android:textSize="@dimen/ts30"/>
+
+        <TextView
+            android:id="@+id/tv_prize_time"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:text="获奖时间:2017-11-11"
+            android:textSize="@dimen/ts28"/>
+
+        <TextView
+            android:id="@+id/tv_prize_name"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:text="奖品名称:PhoneX-256G版本20部"
+            android:textSize="@dimen/ts28"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:background="@color/white"
+        android:padding="@dimen/common_margin">
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:text="兑奖码:"
+            android:textColor="@color/black"
+            android:textSize="@dimen/ts28"/>
+
+        <TextView
+            android:id="@+id/tv_redeem_code"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="SK1947XC"
+            android:textSize="@dimen/ts28"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:background="@color/white"
+        android:padding="@dimen/common_margin">
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:text="核销状态:"
+            android:textColor="@color/black"
+            android:textSize="@dimen/ts28"/>
+
+        <TextView
+            android:id="@+id/tv_state"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="未领取"
+            android:textSize="@dimen/ts28"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:background="@color/white"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="35dp"
+            android:gravity="center_vertical"
+            android:paddingLeft="@dimen/common_margin"
+            android:text="获奖人信息"
+            android:textColor="@color/text_black_212121"
+            android:textSize="@dimen/ts28"/>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="0.5dp"
+            android:layout_marginLeft="@dimen/common_margin"
+            android:layout_marginRight="@dimen/common_margin"
+            android:background="@color/line_gray"/>
+
+        <!--头像、昵称、手机号-->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:padding="@dimen/common_margin">
+
+            <com.xdjd.view.CircleImageView
+                android:id="@+id/iv_customer_head"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:src="@drawable/head_icon"/>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="5dp"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/tv_customer_name"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text=""
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/ts26"/>
+
+                <TextView
+                    android:id="@+id/tv_customer_phone"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5dp"
+                    android:text=""
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/ts26"/>
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/btn_redeem"
+        android:layout_width="wrap_content"
+        android:layout_height="40dp"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="90dp"
+        android:background="@drawable/shape_red_btn"
+        android:gravity="center"
+        android:paddingLeft="80dp"
+        android:paddingRight="80dp"
+        android:text="奖品核销"
+        android:textColor="@color/text_FBFEFD"
+        android:textSize="@dimen/ts28"/>
+
+</LinearLayout>

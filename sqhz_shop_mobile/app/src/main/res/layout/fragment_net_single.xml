@@ -1,0 +1,191 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:orientation="vertical">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <RelativeLayout
+            android:id="@+id/order_rl"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/color_666666"
+            android:orientation="vertical">
+        </RelativeLayout>
+
+        <include layout="@layout/titlebar"/>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1px"
+            android:background="@color/line_gray"/>
+
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1px"
+        android:background="@color/line_gray"/>
+
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/title_height_px"
+        android:background="@color/white"
+        android:gravity="center_vertical"
+        android:orientation="horizontal" >
+
+        <LinearLayout
+            android:id="@+id/search_ll"
+            android:layout_width="0dp"
+            android:layout_height="100px"
+            android:layout_weight="1"
+            android:layout_marginLeft="45px"
+            android:background="@drawable/search_shape"
+            android:gravity="center_vertical"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:layout_width="60px"
+                android:layout_height="60px"
+                android:layout_marginLeft="45px"
+                android:src="@drawable/search"
+                />
+
+            <EditText
+                android:id="@+id/search_edit"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="32px"
+                android:gravity="center_vertical"
+                android:hint="请输入搜索单号"
+                android:singleLine="true"
+                android:background="@null"
+                android:textColor="@color/text_black_212121"
+                android:textSize="@dimen/text_Size38"
+                />
+
+        </LinearLayout>
+
+        <Button
+            android:id="@+id/search_btn"
+            android:layout_width="250px"
+            android:layout_height="100px"
+            android:layout_marginLeft="40px"
+            android:layout_marginRight="45px"
+            android:background="@drawable/shape_red_btn"
+            android:text="搜索"
+            android:textColor="@color/white" />
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1px"
+        android:background="@color/line_gray"
+        />
+
+
+    <!--暂时隐藏界面-->
+    <LinearLayout
+        android:id="@+id/net_single_ll"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:visibility="invisible"
+        android:orientation="vertical">
+
+        <!--<LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="45dp"
+            android:background="@color/white"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/tv_0"
+                android:layout_width="0.0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:text="全部"
+                android:textColor="@color/order_title_color"
+                android:textSize="@dimen/text_Size44"/>
+
+
+            <TextView
+                android:id="@+id/tv_1"
+                android:layout_width="0.0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:text="待付款"
+                android:textColor="@color/order_title_color"
+                android:textSize="@dimen/text_Size44"/>
+
+            <TextView
+                android:id="@+id/tv_2"
+                android:layout_width="0.0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:text="待发货"
+                android:textColor="@color/order_title_color"
+                android:textSize="@dimen/text_Size44"/>
+
+            <TextView
+                android:id="@+id/tv_3"
+                android:layout_width="0.0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:text="已完成"
+                android:textColor="@color/order_title_color"
+                android:textSize="@dimen/text_Size44"/>
+        </LinearLayout>
+
+        <RelativeLayout
+            android:id="@+id/line"
+            android:layout_width="wrap_content"
+            android:layout_height="1dp"
+            android:background="@color/transparent">
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_marginLeft="13dp"
+                android:layout_marginRight="13dp"
+                android:background="@color/text_df1122"/>
+        </RelativeLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="10dp"
+            android:background="#f2f2f2"/>
+
+        <com.handmark.pulltorefresh.library.PullToRefreshScrollView
+            android:id="@+id/pull_net_single_scroll"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+        >
+            <com.xdjd.view.NoScrollListView
+                android:id="@+id/net_single_listview"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:divider="@color/white"
+                android:dividerHeight="40px">
+            </com.xdjd.view.NoScrollListView>
+        </com.handmark.pulltorefresh.library.PullToRefreshScrollView>
+
+        <android.support.v4.view.ViewPager
+            android:id="@+id/viewPager"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+        </android.support.v4.view.ViewPager>-->
+
+    </LinearLayout>
+
+</LinearLayout>

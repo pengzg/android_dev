@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        android:background="@color/white"
+        android:paddingBottom="5dp"
+        android:paddingLeft="@dimen/common_margin"
+        android:paddingRight="@dimen/common_margin"
+        android:paddingTop="5dp">
+
+        <TextView
+            android:id="@+id/tv_index"
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:background="@drawable/bg_oval_blue"
+            android:gravity="center"
+            android:text="1"
+            android:textColor="@color/white"
+            android:textSize="@dimen/ts26"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_weight="1"
+            android:gravity="center_vertical"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:text="P-201712152006"
+                android:textColor="@color/black"
+                android:textSize="@dimen/ts28"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:text="铺货时间:2017-12-12 09:23"
+                android:textColor="@color/text_gray"
+                android:textSize="@dimen/ts26"/>
+        </LinearLayout>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/bg_btn_login"
+            android:padding="5dp"
+            android:text="整单撤货"
+            android:textColor="@color/white"
+            android:textSize="@dimen/ts26"/>
+
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0.5dp"
+        android:background="@color/line_afafaf"/>
+
+    <com.xdjd.view.NoScrollListView
+        android:id="@+id/lv_order_goods"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+    </com.xdjd.view.NoScrollListView>
+</LinearLayout>

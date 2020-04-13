@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/white">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white"
+        android:orientation="vertical"
+        android:padding="0.5dp">
+
+        <TextView
+            android:id="@+id/tv_ysk"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:gravity="center"
+            android:text="预收款"
+            android:textColor="@color/text_black_212121"
+            android:textSize="@dimen/ts26"/>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="0.5dp"
+            android:background="@color/line_gray"/>
+
+        <TextView
+            android:id="@+id/tv_qk"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:gravity="center"
+            android:text="欠款"
+            android:textColor="@color/text_black_212121"
+            android:textSize="@dimen/ts26"/>
+
+    </LinearLayout>
+
+</LinearLayout>

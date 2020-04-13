@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout  xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:background="@color/white" >
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:scrollbars="none">
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical" >
+            <com.xdjd.view.NoScrollListView
+                android:id="@+id/orderStatus_listview"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:divider="@null" >
+            </com.xdjd.view.NoScrollListView>
+                <!--android:dividerHeight="" 设置listview行高-->
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1px"
+                android:background="@color/line_gray" />
+            </LinearLayout>
+        </ScrollView>
+    </LinearLayout >
+    <!--<View
+        android:layout_width="match_parent"
+        android:layout_height="1px"
+        android:background="@color/line_gray" />
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="135px"
+        android:layout_alignParentBottom="true"
+        android:gravity="center_vertical|right"
+        android:orientation="horizontal"
+        android:background="@drawable/ease_common_tab_bg">
+        <Button
+            android:id="@+id/buy_again"
+            android:layout_width="293px"
+            android:layout_height="95px"
+            android:text="再次购买"
+            android:textColor="@color/text_white_f0f0f0"
+            android:layout_marginRight="50px"
+            android:textSize="@dimen/text_Size44"
+            android:background="@drawable/background_code" />
+
+        <Button
+            android:id="@+id/confirm_receive"
+            android:layout_width="293px"
+            android:layout_height="95px"
+            android:text="确认收货"
+            android:layout_marginRight="50px"
+            android:textSize="@dimen/text_Size44"
+            android:textColor="@color/text_white_f0f0f0"
+            android:background="@drawable/background_code" />
+    </LinearLayout>
+-->
+
+</LinearLayout >

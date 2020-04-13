@@ -1,0 +1,16 @@
+<resources>
+
+    <dimen name="title_height">45dp</dimen>
+
+    <!--main界面中间按钮距离底部的距离-->
+    <dimen name="main3_img_bottom">10dp</dimen>
+    <!--main界面中间按钮高度-->
+    <dimen name="main3_img">50dp</dimen>
+    <!--采购界面一级分类高度-->
+    <dimen name="purchase_class_one">40dp</dimen>
+
+    <dimen name="purchase_pw_screen_margin">42dp</dimen>
+    <!--采购页购物车图标大小-->
+    <dimen name="purchase_cart_img">50dp</dimen>
+
+</resources>

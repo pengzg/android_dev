@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:id="@+id/item_ct_ll"
+              android:orientation="horizontal"
+              android:layout_width="match_parent"
+              android:layout_height="67dp">
+
+    <TextView
+        android:id="@+id/item_ct_tv"
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:gravity="center"
+        android:lines="2"
+        android:ellipsize="end"
+        android:textColor="@color/purchase_classtwo_tv_textcolor"
+        android:text="商品分类"
+        android:textSize="@dimen/ts30"/>
+
+    <ImageView
+        android:id="@+id/item_ct_iv"
+        android:layout_width="5dp"
+        android:layout_height="match_parent"
+        android:src="@drawable/classify2_bg"
+        android:visibility="invisible"
+        />
+
+</LinearLayout>

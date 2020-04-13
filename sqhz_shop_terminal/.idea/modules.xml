@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/MPChartLib1/MPChartLib1.iml" filepath="$PROJECT_DIR$/MPChartLib1/MPChartLib1.iml" />
+      <module fileurl="file://$PROJECT_DIR$/MPChartLib2/MPChartLib2.iml" filepath="$PROJECT_DIR$/MPChartLib2/MPChartLib2.iml" />
+      <module fileurl="file://$PROJECT_DIR$/PushSDK/PushSDK.iml" filepath="$PROJECT_DIR$/PushSDK/PushSDK.iml" />
+      <module fileurl="file://$PROJECT_DIR$/app/app.iml" filepath="$PROJECT_DIR$/app/app.iml" />
+      <module fileurl="file://$PROJECT_DIR$/distrbution.iml" filepath="$PROJECT_DIR$/distrbution.iml" />
+      <module fileurl="file://$PROJECT_DIR$/djkeyboard/djkeyboard.iml" filepath="$PROJECT_DIR$/djkeyboard/djkeyboard.iml" />
+      <module fileurl="file://$PROJECT_DIR$/library/library.iml" filepath="$PROJECT_DIR$/library/library.iml" />
+      <module fileurl="file://$PROJECT_DIR$/pickerview/pickerview.iml" filepath="$PROJECT_DIR$/pickerview/pickerview.iml" />
+    </modules>
+  </component>
+</project>

@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:orientation="vertical"
+              android:background="@color/color_f1f1f1"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent">
+
+    <com.handmark.pulltorefresh.library.PullToRefreshScrollView
+        android:id="@+id/pull_scroll"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1">
+
+        <com.xdjd.view.NoScrollListView
+            android:id="@+id/lv_visiting"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+        </com.xdjd.view.NoScrollListView>
+
+    </com.handmark.pulltorefresh.library.PullToRefreshScrollView>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0.5dp"
+        android:background="@color/line_gray"/>
+
+    <TextView
+        android:id="@+id/tv_total_num"
+        android:layout_width="match_parent"
+        android:layout_height="30dp"
+        android:background="@color/white"
+        android:gravity="center_vertical"
+        android:paddingLeft="@dimen/common_margin"
+        android:paddingRight="@dimen/common_margin"
+        android:text="超期预警:"
+        android:textColor="@color/text_black_212121"
+        android:textSize="@dimen/ts28"/>
+
+</LinearLayout>

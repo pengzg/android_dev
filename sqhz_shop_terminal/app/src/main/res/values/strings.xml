@@ -1,0 +1,53 @@
+<resources>
+    <string name="app_name">盒子助手</string>
+
+    //--- 加载布局提示 ----
+    <string name="empty_tips">空空如也╮(╯▽╰)╭</string>
+    <string name="error_tips">网络不给力╮(╯▽╰)╭</string>
+    <string name="error_refresh">点击重试</string>
+    <string name="loading_tips">正在加载...</string>
+    <string name="title_activity_login">LoginActivity</string>
+    <string name="title_activity_edit_address">EditAddressActivity</string>
+
+    <string name="no_data">暂时没有数据!</string>
+
+    <string name="edit">编辑</string>
+    <string name="submit">提交</string>
+
+    <string name="add">添加</string>
+    <string name="cancel">取消</string>
+
+    <string name="advance_payments">预收款</string>
+    <string name="debt">欠款</string>
+
+    <string name="no_distribution">暂不配送是在当前配送操作中暂不对单据进行配送处理!您确认将单据设为暂不配送吗?</string>
+    <string name="whole_single_reset">整单清零是将您选择的单据明细产品数量设置为零!整单清零后可以重新进入此模式进行恢复!您确认进行整单清零吗?</string>
+
+    <string name="return_goods_desc">1.可以在此制定退货单的入库仓库，如不需要不进行操作即可。
+        (点击没有仓库可选，请联系文员配置仓库权限)\t\n2.默认为上次制定的入库仓库。\t\n
+        3.在不开启虚拟库存的情况下，无需选择处理品和退货品的入库仓库。
+    </string>
+    <string name="require_goods_desc">1.可以在此制定要货单的出库仓库，如不需要不进行操作即可。
+        (点击没有仓库可选，请联系文员配置仓库权限)\t\n2.默认为上次制定的出库仓库。\t\n
+        3.在不开启虚拟库存的情况下，无需选择处理品的出库仓库。
+    </string>
+
+    <!--没有连接过的蓝牙提示语言-->
+    <string name="ly_null_error">连接打印机失败,请到单据补打中进行打印!</string>
+    <string name="title_activity_visiting_list">VisitingListActivity</string>
+
+    <!--上拉没有数据提醒-->
+    <string name="on_pull_remind">没有更多数据了!</string>
+
+    <string name="unfold_all_order">展开全部订单</string>
+    <string name="pack_up_all_order">收起全部订单</string>
+
+    <string name="day_name_format">EEE</string>
+    <string name="invalid_date">Date must be between %1$s and %2$s.</string>
+    <string name="month_name_format">MMMM yyyy</string>
+
+    <string name="bluetooth_close_printing_failed">打印失败,请检查蓝牙功能是否开启!</string>
+    <string name="bluetooth_printing_failed">打印失败!</string>
+    <string name="bluetooth_printing_success">打印成功!</string>
+
+</resources>

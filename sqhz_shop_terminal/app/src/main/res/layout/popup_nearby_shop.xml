@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:windowSoftInputMode="stateAlwaysHidden|adjustPan">
+
+    <LinearLayout
+        android:id="@+id/pop_layout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_alignParentBottom="true"
+        android:orientation="vertical"
+        android:background="@color/white">
+        <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="附近店铺"
+        android:textSize="@dimen/ts30"
+        android:textColor="@color/black"
+        android:gravity="center"
+        android:padding="10dp"/>
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1px"
+            android:background="@color/line_gray"/>
+       <!-- <com.handmark.pulltorefresh.library.PullToRefreshListView-->
+        <ListView
+            android:id="@+id/listView"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:divider="@color/transparent">
+        </ListView>
+        <!--</com.handmark.pulltorefresh.library.PullToRefreshListView>-->
+    </LinearLayout>
+
+
+
+</RelativeLayout>

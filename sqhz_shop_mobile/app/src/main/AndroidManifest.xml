@@ -1,0 +1,372 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest package="com.xdjd.storebox"
+          xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <!-- 网络权限 -->
+    <uses-permission android:name="android.permission.INTERNET"/>
+    <uses-permission android:name="android.permission.READ_PHONE_STATE"/>
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE"/>
+
+    <!-- Required -->
+    <uses-permission android:name="${applicationId}.permission.JPUSH_MESSAGE"/>
+    <uses-permission android:name="android.permission.RECEIVE_USER_PRESENT"/>
+    <uses-permission android:name="android.permission.INTERNET"/>
+    <uses-permission android:name="android.permission.WAKE_LOCK"/>
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"/>
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE"/>
+    <uses-permission android:name="android.permission.VIBRATE"/>
+    <uses-permission android:name="android.permission.MOUNT_UNMOUNT_FILESYSTEMS"/>
+    <uses-permission android:name="android.permission.WRITE_SETTINGS"/>
+
+    <!-- 二维码权限 -->
+    <uses-permission android:name="android.permission.CAMERA"/>
+    <uses-permission android:name="android.permission.FLASHLIGHT"/>
+
+    <uses-feature android:name="android.hardware.camera"/>
+    <uses-feature android:name="android.hardware.camera.autofocus"/>
+
+    <uses-permission android:name="android.permission.VIBRATE"/>
+    <uses-permission android:name="android.permission.WAKE_LOCK"/>
+
+    <!-- shareSDK -->
+    <uses-permission android:name="android.permission.GET_TASKS" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.CHANGE_WIFI_STATE" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+    <uses-permission android:name="android.permission.MANAGE_ACCOUNTS"/>
+    <uses-permission android:name="android.permission.GET_ACCOUNTS"/>
+    <!-- 蓝牙分享所需的权限 -->
+    <uses-permission android:name="android.permission.BLUETOOTH" />
+    <uses-permission android:name="android.permission.BLUETOOTH_ADMIN" />
+
+    <!-- 友盟推送 -->
+    <uses-permission android:name="android.permission.BROADCAST_PACKAGE_ADDED"/>
+    <uses-permission android:name="android.permission.BROADCAST_PACKAGE_CHANGED"/>
+    <uses-permission android:name="android.permission.BROADCAST_PACKAGE_INSTALL"/>
+    <uses-permission android:name="android.permission.BROADCAST_PACKAGE_REPLACED"/>
+    <uses-permission android:name="android.permission.RESTART_PACKAGES"/>
+    <uses-permission android:name="android.permission.GET_TASKS"/>
+    <uses-permission android:name="android.permission.RECEIVE_BOOT_COMPLETED"/>
+    <uses-permission android:name="android.permission.CHANGE_NETWORK_STATE"/>
+    <uses-permission android:name="android.permission.DOWNLOAD_WITHOUT_NOTIFICATION"/>
+    <uses-permission android:name="android.permission.SYSTEM_ALERT_WINDOW"/>
+
+    <uses-permission android:name="android.permission.VIBRATE"/>
+
+    <!--百度地图权限-->
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" ></uses-permission>
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" ></uses-permission>
+    <uses-permission android:name="android.permission.READ_LOGS" ></uses-permission>
+    <uses-permission android:name="android.permission.WRITE_SETTINGS" />
+
+    <application
+        android:name="com.xdjd.storebox.App"
+        android:allowBackup="true"
+        android:icon="@mipmap/logo"
+        android:label="@string/app_name"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+
+        <!-- 百分比适配配置参数 -->
+        <meta-data
+            android:name="design_width"
+            android:value="1536"/>
+        <meta-data
+            android:name="design_height"
+            android:value="2048"/>
+    <!--share SDK-->
+        <meta-data android:name="Mob-AppKey" android:value="2054e8b4cfca2"/>
+        <meta-data android:name="Mob-AppSecret" android:value="4cf387abfcb0828eeb638876e96a44a7"/>
+
+        <!--百度地图-->
+        <service
+            android:name="com.baidu.location.f"
+            android:enabled="true"
+            android:process=":remote" >
+            <intent-filter>
+                <action android:name="com.baidu.location.service_v2.2" >
+                </action>
+            </intent-filter>
+        </service>
+        <meta-data
+            android:name="com.baidu.lbsapi.API_KEY"
+            android:value="Sm5uG3ChwmHTYKeDW6kAlLAiAXzFur70" />  <!--http://lbsyun.baidu.com/apiconsole/key-->
+
+        <!--Android 7.0 读取文件适配 START-->
+        <provider
+            android:name="android.support.v4.content.FileProvider"
+            android:authorities="com.xdjd.storebox.provider"
+            android:exported="false"
+            android:grantUriPermissions="true">
+            <meta-data
+                android:name="android.support.FILE_PROVIDER_PATHS"
+                android:resource="@xml/provider_paths"/>
+        </provider>
+        <!--Android 7.0 读取文件适配 END-->
+
+        <!-- 友盟推送 -->
+        <!--<meta-data
+            android:name="UMENG_APPKEY"
+            android:value="585cd26a07fe65466d001196">
+        </meta-data>
+        <meta-data
+            android:name="UMENG_MESSAGE_SECRET"
+            android:value="7dec4926aef3ac5d897b9f6819b8a62c">
+        </meta-data>-->
+        <!-- <meta-data -->
+        <!-- android:name="UMENG_CHANNEL" -->
+        <!-- android:value="Channel ID" > -->
+        <!-- </meta-data> -->
+
+        <!-- 友盟多渠道打包配置 -->
+        <meta-data
+            android:name="UMENG_CHANNEL"
+            android:value="${UMENG_CHANNEL_VALUE}"/>
+
+        <!-- 闪屏页 -->
+        <activity android:name="com.xdjd.storebox.activity.SplashActivity"
+        android:theme="@style/AppTheme.Launcher">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN"/>
+
+                <category android:name="android.intent.category.LAUNCHER"/>
+            </intent-filter>
+        </activity>
+        <!-- 引导页 -->
+        <activity android:name="com.xdjd.storebox.activity.WelcomeActivity"/>
+
+        <!-- 广告页 -->
+        <activity android:name="com.xdjd.storebox.activity.AdverActivity"/>
+
+        <!-- 登录首页 -->
+        <activity
+            android:name="com.xdjd.storebox.activity.LoginActivity"
+            android:launchMode="singleTask"/>
+        <activity
+            android:name="com.xdjd.storebox.main.MainActivity"
+            android:launchMode="singleTask"
+            android:windowSoftInputMode="adjustPan"/>
+        <!-- 注册 -->
+        <activity
+            android:name="com.xdjd.storebox.activity.ZhuceActivity"
+            android:windowSoftInputMode="adjustResize"/>
+        <!--定位中心仓列表-->
+        <activity android:name="com.xdjd.storebox.activity.CenterShopListActivity"/>
+        <!-- 注册下一步 -->
+        <activity android:name="com.xdjd.storebox.activity.ZhuceActivity_next"/>
+        <!-- 注册成功 -->
+        <activity android:name="com.xdjd.storebox.activity.ZhuceActivity_succeed"/>
+        <!-- 快速注册第一步 -->
+        <activity android:name="com.xdjd.storebox.activity.SpeedyRegisterOneActivity"/>
+        <!-- 快速注册第二步 -->
+        <activity android:name="com.xdjd.storebox.activity.SpeedyRegisterTwoActivity">
+        </activity>
+        <!-- 设置微信登录密码 -->
+        <activity android:name="com.xdjd.storebox.activity.SetWeixinPasswordActivity"/>
+        <!-- 忘记密码 -->
+        <activity android:name="com.xdjd.storebox.activity.ForgotPwdActivity"/>
+        <!-- 忘记密码下一步 -->
+        <activity android:name="com.xdjd.storebox.activity.ForgotPwdActivity_next"/>
+        <!-- 重置密码成功 -->
+        <activity android:name="com.xdjd.storebox.activity.ResetPwdsuceedActivity"/>
+        <!-- 个人信息页 -->
+        <activity android:name="com.xdjd.storebox.activity.PersonInfoActivity"/>
+        <!-- 修改店铺名称 -->
+        <activity android:name="com.xdjd.storebox.activity.ChangeShopNameActivity"/>
+        <!-- 修改用户昵称 -->
+        <activity android:name="com.xdjd.storebox.activity.ChangePersonNameActivity"/>
+        <!-- 修改密码 -->
+        <activity android:name="com.xdjd.storebox.activity.ChangePasswordActivity"/>
+        <!-- 修改手机号 -->
+        <activity android:name="com.xdjd.storebox.activity.ChangePhoneNumActivity"/>
+        <!-- 收货地址列表 -->
+        <activity android:name="com.xdjd.storebox.activity.Address_main"/>
+        <!-- 新增收货地址 -->
+        <activity android:name="com.xdjd.storebox.activity.AddReceiveAdressActivity"/>
+        <activity android:name="com.xdjd.storebox.activity.ReceiveAddressActivity"/>
+        <!-- 修改收货地址 -->
+        <activity android:name="com.xdjd.storebox.activity.ModifyReceiveAddress"/>
+        <!-- 订单详情 -->
+        <activity android:name="com.xdjd.storebox.activity.OrderDetailActivity"/>
+        <!-- 商品详情页 -->
+        <activity android:name="com.xdjd.storebox.activity.GoodsDetailActivity"/>
+        <!-- 购物车 -->
+        <activity android:name="com.xdjd.storebox.activity.CartActivity"/>
+        <!-- 活动界面 -->
+        <activity android:name="com.xdjd.storebox.activity.ActionActivity"/>
+        <!--组合促销活动-->
+        <activity android:name=".activity.ActionActivityGroup"/>
+        <!-- 确认订单界面 -->
+        <activity
+            android:name="com.xdjd.storebox.activity.ConfirmOrderActivity"
+            android:windowSoftInputMode="adjustPan"/>
+        <!-- 订单成功界面 -->
+        <activity android:name="com.xdjd.storebox.activity.OrderSuccessActivity"/>
+
+        <!--余额-->
+        <activity android:name=".activity.BalanceActivity"/>
+        <!--余额明细筛选-->
+        <activity android:name=".activity.ActivityBalanceDetailFilter"/>
+        <!--收支明细-->
+        <activity android:name=".activity.IncomeAndExpensesActivity"/>
+        <!--积分主界面-->
+        <activity android:name="com.xdjd.storebox.activity.IntegralMainActivity"></activity>
+        <!--积分订单-->
+        <activity android:name="com.xdjd.storebox.activity.IntegralOrderActivity"></activity>
+        <!--我的积分-->
+        <activity android:name="com.xdjd.storebox.activity.MyIntegralActivity"/>
+        <!--积分规则-->
+        <activity android:name="com.xdjd.storebox.activity.IntegralRuleActivity"/>
+        <!--积分商城-->
+        <activity android:name="com.xdjd.storebox.activity.IntegralStoreActivity"/>
+        <!--积分商品详情-->
+        <activity android:name="com.xdjd.storebox.activity.IntegralGoodsDetailActivity"/>
+        <activity
+            android:name="com.xdjd.storebox.activity.IntegralConfirmOrderActivity"
+            android:label="积分订单确认">
+        </activity>
+        <!-- 我的订单 -->
+        <activity android:name="com.xdjd.storebox.activity.MyOrderActivity"/>
+        <!-- 优惠券 -->
+        <activity android:name="com.xdjd.storebox.activity.CouponActivity"/>
+        <!-- 我的反馈 -->
+        <activity android:name="com.xdjd.storebox.activity.MeFeedbackActivity"/>
+        <!-- 反馈回复 -->
+        <activity android:name="com.xdjd.storebox.activity.FeedbackReplyActivity"/>
+        <!-- 设置 -->
+        <activity android:name="com.xdjd.storebox.activity.SetupActivity"/>
+        <!--域名设置-->
+        <activity android:name=".activity.SystemConfigurationActivity"/>
+        <!-- 关于社区盒子 -->
+        <activity android:name="com.xdjd.storebox.activity.AboutCommunityBoxActivity"/>
+        <!-- 推广用户 -->
+        <activity android:name="com.xdjd.storebox.activity.PromoteUsersActivity"/>
+        <!-- 推广统计 -->
+        <activity android:name="com.xdjd.storebox.activity.PromoteStatisticsActivity"/>
+        <!-- 待处理订单 -->
+        <activity android:name="com.xdjd.storebox.activity.PendingOrderActivity"/>
+        <!-- 推广排名 -->
+        <activity android:name="com.xdjd.storebox.activity.PromoteRankingActivity"/>
+        <!-- 待处理订单详情 -->
+        <activity android:name="com.xdjd.storebox.activity.PendingOrderDetailActivity"/>
+        <!-- 我的收藏 -->
+        <activity android:name="com.xdjd.storebox.activity.MyCollectActivity"/>
+        <!-- 我常买 -->
+        <activity android:name="com.xdjd.storebox.activity.OftenBuyActivity"/>
+        <!-- 促销活动 -->
+        <activity android:name="com.xdjd.storebox.activity.SalesActivity"/>
+        <!-- 新品推荐 -->
+        <activity android:name="com.xdjd.storebox.activity.NewRecommendActivity"/>
+        <!-- 购买的商品列表 -->
+        <activity android:name="com.xdjd.storebox.activity.GoodsListActivity"/>
+        <!-- 搜索商品界面 -->
+        <activity
+            android:name="com.xdjd.storebox.activity.SearchActivity"
+            android:windowSoftInputMode="adjustPan"/>
+        <!-- 网单详情页 -->
+        <activity android:name="com.xdjd.storebox.activity.NetSingleDetailActivity"/>
+        <!-- 商品活动列表 -->
+        <activity android:name="com.xdjd.storebox.activity.GoodsCategoryActivity"/>
+        <!-- 消息列表界面 -->
+        <activity android:name="com.xdjd.storebox.activity.MessageActivity"/>
+        <!-- 取消订单界面 -->
+        <activity android:name="com.xdjd.storebox.activity.CancelOrderActivity"/>
+        <!-- 加价购商品活动列表 -->
+        <activity android:name="com.xdjd.storebox.activity.JiaJiaGouActivity"/>
+        <!-- 临期商品列表 -->
+        <activity android:name="com.xdjd.storebox.activity.ValidActivity"/>
+
+        <!--活动消息-->
+
+        <activity android:name="com.xdjd.storebox.activity.MessageActionActivity">
+        </activity>
+        <!--通知消息-->
+        <activity android:name="com.xdjd.storebox.activity.NotificationMessageActivity"></activity>
+        <!--物流消息-->
+        <activity android:name="com.xdjd.storebox.activity.MessageLogisticsActivity"></activity>
+        <!--系统消息详情界面-->
+        <activity android:name="com.xdjd.storebox.activity.MessageDetailActivity"></activity>
+
+        <!-- 公共H5界面 -->
+        <activity android:name="com.xdjd.storebox.activity.CommonWebActivity"/>
+        <!--中奖记录-->
+        <activity android:name="com.xdjd.storebox.activity.WinningRecordActivity"/>
+        <!--核销界面-->
+        <activity android:name=".activity.RedeemActivity"/>
+        <!--奖品兑换记录-->
+        <activity android:name=".activity.PrizeRecordActivity"/>
+
+        <!--铺货单列表界面-->
+        <activity android:name=".activity.RolloutGoodsOrderActivity"/>
+        <!--铺货详情界面-->
+        <activity android:name=".activity.RolloutGoodsOrderDetailActivity"/>
+        <!--公共搜索界面-->
+        <activity android:name=".activity.SearchGoodsActivity"/>
+
+        <!-- 二维码界面 -->
+        <activity
+            android:name="com.xdjd.storebox.activity.CaptureActivity"
+            android:screenOrientation="portrait"
+            >
+        </activity>
+        <activity
+            android:name="com.xdjd.storebox.activity.ResultActivity"
+            android:screenOrientation="portrait"
+            android:theme="@android:style/Theme.Black.NoTitleBar"/>
+        <activity
+            android:name="com.xdjd.storebox.activity.ScanningPlacetheorderActivity"
+            android:label="扫描下单"
+            android:screenOrientation="portrait">
+        </activity>
+
+        <!-- shareSDK -->
+        <!-- 微信分享回调 -->
+        <activity
+            android:name="com.xdjd.storebox.wxapi.WXEntryActivity"
+            android:theme="@android:style/Theme.Translucent.NoTitleBar"
+            android:configChanges="keyboardHidden|orientation|screenSize"
+            android:exported="true" />
+
+        <activity
+            android:name="com.mob.tools.MobUIShell"
+            android:theme="@android:style/Theme.Translucent.NoTitleBar"
+            android:configChanges="keyboardHidden|orientation|screenSize"
+            android:windowSoftInputMode="stateHidden|adjustResize" >
+
+            <intent-filter>
+                <data android:scheme="tencent100371282" />
+                <action android:name="android.intent.action.VIEW" />
+                <category android:name="android.intent.category.BROWSABLE" />
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+
+            <!-- 调用新浪原生SDK，需要注册的回调activity -->
+            <intent-filter>
+                <action android:name="com.sina.weibo.sdk.action.ACTION_SDK_REQ_ACTIVITY" />
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+
+            <!--集成line客户端登录授权，需要添如下格式的过滤器-->
+            <intent-filter>
+                <data android:scheme="line.1477692153" />
+                <action android:name="android.intent.action.VIEW"/>
+                <category android:name="android.intent.category.BROWSABLE" />
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+
+        </activity>
+        <!--手势密码锁设置-->
+        <activity android:name="com.xdjd.storebox.activity.LockMainActivity"/>
+        <activity android:name="com.xdjd.storebox.activity.SetGestureActivity"/>
+
+        <!--核销密码-->
+        <activity android:name=".activity.WinningCodeActivity"/>
+        <!--核销密码编辑界面-->
+        <activity android:name=".activity.WinningCodeEditActivity"/>
+
+    </application>
+
+</manifest>

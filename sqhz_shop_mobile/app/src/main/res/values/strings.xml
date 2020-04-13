@@ -1,0 +1,29 @@
+<resources>
+    <string name="app_name">盒子订货</string>
+    <!--登录界面-->
+    <string name="login_userID">手机号</string>
+    <string name="forgot_password">找回密码</string>
+    <string name="login">登录</string>
+    <string name="new_user_register">新用户注册</string>
+    <string name="other_account_login">第三方账号登录</string>
+
+    <string name="money">¥</string>
+    <string name="cart_edit">编辑</string>
+    <string name="qujiesuan">去结算</string>
+    <string name="stockout">补货中</string>
+
+    <string name="pull_up_remind">没有更多数据了</string>
+
+    //--- 加载布局提示 ----
+    <string name="empty_tips">空空如也╮(╯▽╰)╭</string>
+    <string name="error_tips">网络不给力╮(╯▽╰)╭</string>
+    <string name="error_refresh">点击重试</string>
+    <string name="loading_tips">正在加载...</string>
+    <string name="title_activity_login">LoginActivity</string>
+    <string name="title_activity_edit_address">EditAddressActivity</string>
+
+    <string name="day_name_format">EEE</string>
+    <string name="invalid_date">Date must be between %1$s and %2$s.</string>
+    <string name="month_name_format">MMMM yyyy</string>
+
+</resources>

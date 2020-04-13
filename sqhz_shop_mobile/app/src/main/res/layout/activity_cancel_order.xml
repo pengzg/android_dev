@@ -1,0 +1,166 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <include layout="@layout/titlebar" />
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1px"
+        android:background="@color/line_gray" />
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="80dp"
+        android:orientation="vertical"
+        android:background="@color/white" >
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="5dp"
+            android:text="您的订单已取消！"
+            android:textSize="@dimen/ts30" />
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:layout_marginLeft="10dp"
+            android:text="请赐予一个理由吧，您的满意是我们改进的动力"
+            android:textSize="@dimen/ts26" />
+    </LinearLayout>
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="10dp"
+        android:background="@color/line_gray" />
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:background="@color/white" >
+        <com.xdjd.view.NoScrollListView
+            android:id="@+id/reasonList"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:scrollbars="none">
+
+        </com.xdjd.view.NoScrollListView>
+    <!--<LinearLayout
+        android:id="@+id/note1"
+        android:layout_width="match_parent"
+        android:layout_height="130px"
+        android:orientation="horizontal"
+        android:gravity="center_vertical" >
+        <ImageView
+            android:id="@+id/phone"
+            android:layout_width="60px"
+            android:layout_height="60px"
+            android:layout_marginLeft="40px"
+            android:src="@drawable/cart_left_point_select" />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="100px"
+            android:text="手机号填错"
+            android:textSize="@dimen/text_Size36" />
+    </LinearLayout>
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="2px"
+            android:background="@color/line_gray" />
+
+    <LinearLayout
+        android:id="@+id/note2"
+        android:layout_width="match_parent"
+        android:layout_height="130px"
+        android:orientation="horizontal"
+        android:gravity="center_vertical" >
+        <ImageView
+            android:id="@+id/address"
+            android:layout_width="60px"
+            android:layout_height="60px"
+            android:layout_marginLeft="40px"
+            android:src="@drawable/cart_left_point_select" />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="100px"
+            android:text="地址填错"
+            android:textSize="@dimen/text_Size36" />
+    </LinearLayout>
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="2px"
+            android:background="@color/line_gray" />
+
+    <LinearLayout
+        android:id="@+id/note3"
+        android:layout_width="match_parent"
+        android:layout_height="130px"
+        android:orientation="horizontal"
+        android:gravity="center_vertical" >
+
+        <ImageView
+            android:id="@+id/sudden"
+            android:layout_width="60px"
+            android:layout_height="60px"
+            android:layout_marginLeft="40px"
+            android:src="@drawable/cart_left_point_select" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="100px"
+            android:text="突然不想要了"
+            android:textSize="@dimen/text_Size36" />
+    </LinearLayout>
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="2px"
+            android:background="@color/line_gray" />
+
+    <LinearLayout
+        android:id="@+id/note4"
+        android:layout_width="match_parent"
+        android:layout_height="130px"
+        android:orientation="horizontal"
+        android:gravity="center_vertical" >
+        <ImageView
+            android:id="@+id/else1"
+            android:layout_width="60px"
+            android:layout_height="60px"
+            android:layout_marginLeft="40px"
+            android:src="@drawable/cart_left_point_select" />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="100px"
+            android:text="其他"
+            android:textSize="@dimen/text_Size36" />
+    </LinearLayout>-->
+    </LinearLayout>
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="10dp"
+        android:background="@color/line_gray" />
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/background"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginTop="10dp" >
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="80dp"
+            android:background="@null"
+            android:id="@+id/input_reason"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="10dp"
+            android:gravity="left"
+            android:hint="请赐予一个理由吧"
+            android:textSize="@dimen/ts26" />
+    </LinearLayout>
+
+
+
+</LinearLayout>

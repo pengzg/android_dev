@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:id="@+id/ll_main"
+              xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:orientation="vertical">
+
+    <include layout="@layout/titlebar"/>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0.5dp"
+        android:background="@color/line_gray"/>
+
+    <include layout="@layout/layout_date_select_style"/>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0.5dp"
+        android:background="@color/line_gray"/>
+
+    <com.handmark.pulltorefresh.library.PullToRefreshScrollView
+        android:id="@+id/pull_scroll"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1">
+
+        <com.xdjd.view.NoScrollListView
+            android:id="@+id/lv_no_scroll"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+        </com.xdjd.view.NoScrollListView>
+
+    </com.handmark.pulltorefresh.library.PullToRefreshScrollView>
+
+
+    <LinearLayout
+        android:id="@+id/ll_bottom"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white"
+        android:orientation="vertical"
+        android:visibility="gone">
+
+        <View android:layout_width="match_parent"
+              android:layout_height="0.5dp"
+              android:background="@color/line_gray"/>
+
+        <TextView
+            android:id="@+id/tv_total_num"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="@dimen/common_margin"
+            android:text="总数量:50家"
+            android:textColor="@color/black"
+            android:textSize="@dimen/ts30"/>
+
+    </LinearLayout>
+
+
+</LinearLayout>

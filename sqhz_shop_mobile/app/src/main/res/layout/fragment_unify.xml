@@ -1,0 +1,296 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:id="@+id/fragment_unify_id"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+
+        <HorizontalScrollView
+            android:id="@+id/classify01_title_scroll"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/color_e6e6e6"
+            android:scrollbars="none">
+
+            <LinearLayout
+                android:id="@+id/classify01_title_ll"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/purchase_class_one"
+                android:orientation="horizontal">
+            </LinearLayout>
+
+        </HorizontalScrollView>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1px"
+            android:layout_marginBottom="0.5dp"
+            android:layout_marginTop="0.5dp"
+            android:background="@color/line_bbb"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal">
+
+            <ListView
+                android:id="@+id/classify02_left_lv"
+                android:layout_width="73dp"
+                android:layout_height="match_parent"
+                android:background="@color/color_e6e6e6"
+                android:divider="@color/line_bbb"
+                android:dividerHeight="0.5dp">
+            </ListView>
+
+            <View
+                android:layout_width="1px"
+                android:layout_height="match_parent"
+                android:background="@color/line_bbb"/>
+
+            <LinearLayout
+                android:id="@+id/right_ll"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@color/white"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="108px"
+                    android:layout_marginLeft="15px"
+                    android:layout_marginRight="20px"
+                    android:layout_marginTop="17px"
+                    android:background="@drawable/shape_unify_screen"
+                    android:gravity="center_vertical"
+                    android:orientation="horizontal">
+
+                    <LinearLayout
+                        android:id="@+id/switch_ll"
+                        android:layout_width="150px"
+                        android:layout_height="match_parent"
+                        android:gravity="center"
+                        android:orientation="vertical">
+
+                        <ImageView
+                            android:id="@+id/switch_iv"
+                            android:layout_width="53px"
+                            android:layout_height="53px"
+                            android:src="@drawable/list_switch_bg"
+                        />
+                    </LinearLayout>
+
+                    <View
+                        android:layout_width="4px"
+                        android:layout_height="54px"
+                        android:background="@color/line_bbb"/>
+
+                    <LinearLayout
+                        android:id="@+id/synthesize_ll"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:gravity="center"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:id="@+id/synthesize_tv"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="综合"
+                            android:textColor="@color/condition_textcolor"
+                            android:textSize="@dimen/text_Size38"/>
+
+                        <ImageView
+                            android:id="@+id/synthesize_iv"
+                            android:layout_width="16px"
+                            android:layout_height="10px"
+                            android:layout_marginLeft="26px"
+                            android:src="@drawable/synthesize_select_bg"/>
+
+                    </LinearLayout>
+
+                    <View
+                        android:layout_width="4px"
+                        android:layout_height="54px"
+                        android:background="@color/line_bbb"/>
+
+                    <LinearLayout
+                        android:id="@+id/sales_volume_ll"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:gravity="center"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:id="@+id/sales_volume_tv"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="销量"
+                            android:textColor="@color/condition_textcolor"
+                            android:textSize="@dimen/text_Size38"/>
+
+                    </LinearLayout>
+
+                    <View
+                        android:layout_width="4px"
+                        android:layout_height="54px"
+                        android:background="@color/line_bbb"/>
+
+                    <LinearLayout
+                        android:id="@+id/price_ll"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:gravity="center"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:id="@+id/price_tv"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="价格"
+                            android:textColor="@color/condition_textcolor"
+                            android:textSize="@dimen/text_Size38"/>
+
+                        <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="22px"
+                            android:orientation="vertical">
+
+                            <ImageView
+                                android:id="@+id/price_up_iv"
+                                android:layout_width="16px"
+                                android:layout_height="10px"
+                                android:src="@drawable/price_select_up_bg"/>
+
+                            <ImageView
+                                android:id="@+id/price_next_iv"
+                                android:layout_width="16px"
+                                android:layout_height="10px"
+                                android:layout_marginTop="14px"
+                                android:src="@drawable/price_select_next_bg"/>
+
+                        </LinearLayout>
+
+                    </LinearLayout>
+
+                    <View
+                        android:layout_width="4px"
+                        android:layout_height="54px"
+                        android:background="@color/line_bbb"/>
+
+                    <LinearLayout
+                        android:id="@+id/screen_ll"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:gravity="center"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:id="@+id/screen_tv"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="筛选"
+                            android:textColor="@color/condition_textcolor"
+                            android:textSize="@dimen/text_Size38"/>
+
+                        <ImageView
+                            android:id="@+id/screen_iv"
+                            android:layout_width="33px"
+                            android:layout_height="33px"
+                            android:layout_marginLeft="23px"
+                            android:src="@drawable/select_screen"/>
+
+                    </LinearLayout>
+
+                </LinearLayout>
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                    <com.handmark.pulltorefresh.library.PullToRefreshScrollView
+                        android:id="@+id/goods_pull_scroll"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_marginTop="5dp"
+                        android:fillViewport="true">
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:orientation="vertical">
+
+                            <com.xdjd.view.NoScrollGridView
+                                android:id="@+id/goods_gv"
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:layout_marginBottom="150dp"
+                                android:layout_marginTop="5dp"
+                                android:background="@color/white"
+                                android:horizontalSpacing="1dp"
+                                android:paddingLeft="5dp"
+                                android:paddingRight="5dp"
+                                android:scrollbars="none"
+                                android:verticalSpacing="2dp"
+                            >
+                            </com.xdjd.view.NoScrollGridView>
+
+                        </LinearLayout>
+
+                    </com.handmark.pulltorefresh.library.PullToRefreshScrollView>
+
+                    <!--<RelativeLayout
+                        android:id="@+id/purchase_cart_rl"
+                        android:layout_width="wrap_content"
+                        android:layout_height="145px"
+                        android:layout_alignParentBottom="true"
+                        android:layout_alignParentRight="true"
+                        android:layout_marginBottom="42px"
+                        android:layout_marginRight="30px"
+                        android:gravity="center_horizontal">
+
+                        <ImageView
+                            android:layout_width="wrap_content"
+                            android:layout_height="145px"
+                            android:scaleType="centerInside"
+                            android:src="@drawable/purchase_cart"/>
+
+                        <TextView
+                            android:id="@+id/purchase_cart_tv"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_centerHorizontal="true"
+                            android:layout_marginTop="35px"
+                            android:text="0.00"
+                            android:textColor="@color/white"
+                            android:textSize="@dimen/text_Size24"/>
+
+                    </RelativeLayout>-->
+
+                </RelativeLayout>
+
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="0.5dp"
+            android:layout_marginTop="0.5dp"
+            android:background="@color/line_bbb"/>
+
+    </LinearLayout>
+
+</LinearLayout>

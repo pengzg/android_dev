@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="300px"
+        android:orientation="horizontal"
+        android:layout_marginLeft="50px"
+        android:layout_marginRight="50px"
+        android:background="@color/white" >
+        <LinearLayout
+            android:layout_width="110px"
+            android:layout_height="300px"
+            android:orientation="vertical"
+            android:gravity="center_horizontal" >
+            <View
+                android:id="@+id/up"
+                android:layout_width="10px"
+                android:layout_height="100px"
+                android:background="@color/line_gray" />
+            <ImageView
+                android:id="@+id/status_image"
+                android:layout_width="110px"
+                android:layout_height="100px" />
+            <View
+                android:id="@+id/down"
+                android:layout_width="10px"
+                android:layout_height="100px"
+                android:background="@color/line_gray" />
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="50px"
+            android:layout_weight="1"
+            android:layout_marginLeft="47px"
+            android:orientation="vertical"
+            android:background="@drawable/background"
+            android:gravity="center_vertical" >
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:gravity="center_vertical"
+                android:layout_marginTop="36px"
+                android:layout_marginLeft="44px"
+                android:layout_marginRight="50px" >
+                <TextView
+                   android:id="@+id/status_first"
+                   android:layout_width="0dp"
+                   android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                   android:textSize="@dimen/text_Size44" />
+                <TextView
+                    android:id="@+id/time"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="@dimen/text_Size36" />
+                </LinearLayout>
+            <TextView
+                android:id="@+id/status_two"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:maxLines="2"
+                android:textSize="@dimen/text_Size36"
+                android:layout_marginLeft="44px"
+                android:layout_marginTop="36px"
+                android:layout_marginBottom="36px" />
+
+        </LinearLayout>
+    </LinearLayout>
+
+</LinearLayout>

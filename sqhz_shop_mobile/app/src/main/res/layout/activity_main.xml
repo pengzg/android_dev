@@ -1,0 +1,208 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    android:id="@+id/ll"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fitsSystemWindows="true">
+
+    <FrameLayout
+        android:id="@+id/fl_container"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@+id/main_bottom_ll"></FrameLayout>
+
+    <View
+        android:id="@+id/ylx_main_white_line"
+        android:layout_width="match_parent"
+        android:layout_height="1.0dip"
+        android:layout_above="@+id/main_bottom_ll"
+        android:background="#d9d9d9"/>
+
+    <View android:layout_width="@dimen/main3_img"
+          android:layout_height="@dimen/main3_img"
+          android:layout_marginBottom="@dimen/main3_img_bottom"
+          android:background="@drawable/main_line_gray"
+          android:layout_alignParentBottom="true"
+          android:layout_centerHorizontal="true"
+          android:id="@+id/view"
+        android:visibility="gone"/>
+
+    <LinearLayout
+        android:id="@+id/main_bottom_ll"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:background="@color/white"
+        android:paddingTop="2dp"
+        android:orientation="horizontal"
+        android:gravity="center"
+        >
+        <!--android:paddingTop="2dp"-->
+       <!-- <LinearLayout
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:background="@color/color_f07e1e"
+            android:orientation="vertical">
+
+            <ImageView
+                android:layout_marginTop="5px"
+                android:layout_width="wrap_content"
+                android:layout_height="80px"
+                android:scaleType="centerInside"
+                android:src="@drawable/main_activity_btn1"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5px"
+                android:layout_marginBottom="5px"
+                android:text="首页"
+                android:textColor="@color/main_tab_textcolor"
+                android:textSize="@dimen/text_Size40"/>
+
+        </LinearLayout>-->
+        <!--style="@style/my_tab_item"-->
+        <!--<Button
+            android:id="@+id/main_button1"
+            android:drawableTop="@drawable/main_activity_btn1"
+            android:text="首页"
+            style="@style/my_tab_item"
+        />
+
+        <Button
+            android:id="@+id/main_button2"
+            android:drawableTop="@drawable/main_activity_btn4"
+            android:text="分类"
+            style="@style/my_tab_item"
+        />
+
+        <RelativeLayout
+            android:id="@+id/main_btn_invisible"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1.0"
+            android:visibility="gone"
+          />
+
+
+        <Button
+            android:id="@+id/main_button4"
+            android:drawableTop="@drawable/main_activity_btn2"
+            android:text="购物车"
+            style="@style/my_tab_item"
+        />
+
+        <Button
+            android:id="@+id/main_button5"
+            android:drawableTop="@drawable/main_activity_btn5"
+            android:text="我的"
+            style="@style/my_tab_item"
+        />-->
+        <LinearLayout
+            android:id="@+id/main_button1"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:orientation="vertical"
+            android:gravity="center">
+            <ImageView
+                android:layout_width="25dp"
+                android:layout_height="25dp"
+                android:src="@drawable/main_activity_btn1"/>
+            <TextView
+                android:id="@+id/main_tv1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="首页"
+                android:textSize="@dimen/ts20"/>
+        </LinearLayout>
+        <LinearLayout
+            android:id="@+id/main_button2"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:orientation="vertical"
+            android:gravity="center">
+            <ImageView
+                android:layout_width="25dp"
+                android:layout_height="25dp"
+                android:src="@drawable/main_activity_btn4"/>
+            <TextView
+                android:id="@+id/main_tv2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="分类"
+                android:textSize="@dimen/ts20"/>
+
+        </LinearLayout>
+        <TextView
+            android:id="@+id/main_tv3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:visibility="gone"/>
+        <LinearLayout
+            android:id="@+id/main_button4"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:orientation="vertical"
+            android:gravity="center">
+            <ImageView
+                android:layout_width="25dp"
+                android:layout_height="25dp"
+                android:src="@drawable/main_activity_btn2"
+                />
+            <TextView
+                android:id="@+id/main_tv4"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="购物车"
+                android:textSize="@dimen/ts20"/>
+
+        </LinearLayout>
+        <LinearLayout
+            android:id="@+id/main_button5"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:orientation="vertical"
+            android:gravity="center">
+            <ImageView
+                android:layout_width="25dp"
+                android:layout_height="25dp"
+                android:src="@drawable/main_activity_btn5"/>
+            <TextView
+                android:id="@+id/main_tv5"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="我的"
+                android:textSize="@dimen/ts20"/>
+
+        </LinearLayout>
+    </LinearLayout>
+
+    <!--<RelativeLayout
+        android:id="@+id/main_relative3"
+        android:layout_width="@dimen/main3_img"
+        android:layout_height="@dimen/main3_img"
+        android:background="@color/transparent"
+        android:layout_alignTop="@+id/view"
+        android:layout_alignLeft="@+id/view"
+        android:layout_alignStart="@+id/view">-->
+
+        <ImageView
+            android:id="@+id/main_img3"
+            android:layout_width="wrap_content"
+            android:layout_height="@dimen/main3_img"
+            android:scaleType="centerInside"
+            android:layout_alignTop="@+id/view"
+            android:layout_centerHorizontal="true"
+            android:src="@drawable/main_activity_btn3"
+            android:visibility="gone"/>
+
+    <!--</RelativeLayout>-->
+
+</RelativeLayout>

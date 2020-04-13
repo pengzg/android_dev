@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:orientation="vertical"
+>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:background="@color/white"
+        android:paddingLeft="50px"
+        android:paddingRight="50px">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="130px"
+            android:gravity="center_vertical"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/order_time_tv"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="2017/2/21 12:30"
+                android:textSize="@dimen/text_Size36"/>
+
+            <TextView
+                android:id="@+id/order_type_tv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="交易成功"
+                android:textColor="#05A9F1"
+                android:textSize="@dimen/text_Size36"/>
+
+        </LinearLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1px"
+            android:background="@color/line_gray"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:paddingBottom="20px"
+            android:paddingTop="40px">
+
+            <TextView
+                android:id="@+id/goods_title"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="(积分兑换)苹果手机一部"
+                android:textColor="@color/text_212121"
+                android:textSize="@dimen/text_Size38"/>
+
+            <TextView
+                android:id="@+id/integral_num"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="right"
+                android:layout_marginTop="10px"
+                android:gravity="right"
+                android:text="9积分"
+                android:textColor="@color/text_212121"
+                android:textSize="@dimen/text_Size38"/>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1px"
+        android:background="@color/line_gray"/>
+
+</LinearLayout>

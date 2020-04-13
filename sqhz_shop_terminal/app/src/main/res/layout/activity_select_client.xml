@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:orientation="vertical">
+    <include layout="@layout/titlebar"/>
+
+    <include layout="@layout/layout_search"/>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0.5dp"
+        android:background="@color/line_gray"/>
+
+    <LinearLayout
+        android:id="@+id/ll_select_client"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <ListView
+            android:id="@+id/lv_client_search"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:visibility="gone">
+        </ListView>
+
+        <LinearLayout
+            android:id="@+id/ll_client_datum"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal">
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1.5"
+                android:background="@color/white"
+                android:orientation="vertical">
+
+                <ListView
+                    android:id="@+id/classify_one_lv"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:divider="@color/line_gray"
+                    android:dividerHeight="0.5dp">
+                </ListView>
+
+            </LinearLayout>
+
+            <View
+                android:layout_width="1.5dp"
+                android:layout_height="match_parent"
+                android:background="@color/transparent"/>
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1.5"
+                android:background="@color/color_f9f9f9"
+                android:orientation="vertical">
+
+                <ListView
+                    android:id="@+id/classify_two_lv"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:divider="@color/line_gray"
+                    android:dividerHeight="0.5dp">
+                </ListView>
+
+            </LinearLayout>
+
+            <View
+                android:layout_width="1.5dp"
+                android:layout_height="match_parent"
+                android:background="@color/transparent"/>
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="2"
+                android:background="@color/color_f1f1f1"
+                android:orientation="vertical">
+
+                <com.handmark.pulltorefresh.library.PullToRefreshScrollView
+                    android:id="@+id/pull_scroll"
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="1">
+
+                    <com.xdjd.view.NoScrollListView
+                        android:id="@+id/client_lv"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:divider="@color/line_gray"
+                        android:dividerHeight="0.5dp">
+                    </com.xdjd.view.NoScrollListView>
+
+                </com.handmark.pulltorefresh.library.PullToRefreshScrollView>
+
+                <TextView
+                    android:id="@+id/tv_pull_hint"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:background="@color/white"
+                    android:padding="2dp"
+                    android:text="上拉加载更多"
+                    android:textSize="@dimen/ts26"/>
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</LinearLayout>

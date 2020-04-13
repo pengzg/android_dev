@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout  xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_alignParentTop="@+id/delete_address" >
+
+        <include layout="@layout/titlebar" />
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1px"
+            android:background="@color/line_gray" />
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1px"
+            android:layout_marginTop="60px"
+            android:background="@color/line_gray" />
+        <ListView
+            android:id="@+id/receive_address_list"
+            android:layout_width="match_parent"
+            android:layout_height="1500px" />
+
+
+
+
+    </LinearLayout >
+
+    <Button
+        android:id="@+id/delete_address"
+        android:layout_width="match_parent"
+        android:layout_height="130px"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="81px"
+        android:layout_marginLeft="55px"
+        android:layout_marginRight="55px"
+        android:text="删除地址"
+        android:textSize="@dimen/text_Size40"
+        android:textColor="@color/text_FBFEFD"
+        android:background="@drawable/person_center_btn" />
+
+</RelativeLayout >

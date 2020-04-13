@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:id="@+id/root"
+                xmlns:android="http://schemas.android.com/apk/res/android"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/title_height"
+                android:background="@color/title_bg"
+                android:gravity="center_vertical">
+
+    <RelativeLayout
+        android:id="@+id/left_layout"
+        android:layout_width="50dip"
+        android:layout_height="match_parent"
+        android:layout_marginLeft="5dp"
+        android:background="@drawable/ease_common_tab_bg"
+        android:clickable="true"
+        android:visibility="gone">
+
+        <ImageView
+            android:id="@+id/left_image"
+            android:layout_width="13dp"
+            android:layout_height="21dp"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="12dp"
+            android:scaleType="centerInside"
+            android:src="@mipmap/leftback"/>
+
+        <TextView
+            android:id="@+id/tv_lefttext_titlebar"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:textColor="@color/text_black_212121"
+            android:textSize="@dimen/ts28"
+            android:visibility="gone"/>
+
+    </RelativeLayout>
+
+    <TextView
+        android:id="@+id/title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:layout_marginLeft="50dp"
+        android:layout_marginRight="50dp"
+        android:ellipsize="end"
+        android:singleLine="true"
+        android:textColor="@color/white"
+        android:textSize="@dimen/ts34"/>
+
+    <RelativeLayout
+        android:id="@+id/right_layout"
+        android:layout_width="50dp"
+        android:layout_height="match_parent"
+        android:layout_alignParentRight="true"
+        android:background="@color/transparent"
+        android:visibility="gone">
+
+        <ImageView
+            android:id="@+id/right_image"
+            android:layout_width="60px"
+            android:layout_height="60px"
+            android:layout_centerInParent="true"
+            android:scaleType="centerInside"/>
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/right_left_layout"
+        android:layout_width="50dp"
+        android:layout_height="match_parent"
+        android:layout_alignLeft="@+id/right_layout"
+        android:background="@drawable/ease_common_tab_bg"
+        android:visibility="gone">
+
+        <ImageView
+            android:id="@+id/right_left_image"
+            android:layout_width="25dp"
+            android:layout_height="25dp"
+            android:layout_marginRight="10dp"
+            android:layout_centerInParent="true"
+            android:scaleType="centerInside"/>
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:layout_alignParentRight="true"
+        android:gravity="center_vertical"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/right_text02"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:paddingRight="5dp"
+            android:layout_toLeftOf="@+id/right_Text_layout"
+            android:gravity="center"
+            android:textSize="@dimen/ts28"
+            android:visibility="gone"/>
+
+        <RelativeLayout
+            android:id="@+id/right_Text_layout"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:background="@color/title_bg"
+            android:visibility="gone">
+
+            <TextView
+                android:id="@+id/right_Text"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:paddingBottom="5dp"
+                android:paddingLeft="12dp"
+                android:paddingRight="12dp"
+                android:paddingTop="5dp"
+                android:textColor="@color/color_f0f0f0"
+                android:textSize="@dimen/ts28"/>
+        </RelativeLayout>
+
+    </LinearLayout>
+
+</RelativeLayout>

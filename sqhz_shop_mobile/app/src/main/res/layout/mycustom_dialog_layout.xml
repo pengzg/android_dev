@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/transparent"
+    android:orientation="vertical"
+    android:gravity="center">
+
+    <LinearLayout
+        android:layout_width="260dp"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="40dp"
+        android:layout_marginRight="40dp"
+        android:background="@drawable/a_plan_menu_bac"
+        android:orientation="vertical" >
+
+        <TextView
+            android:id="@+id/dialog_title"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:gravity="center"
+            android:text="提示"
+            android:textColor="@color/text_black_212121"
+            android:textSize="@dimen/ts30"
+             />
+
+        <TextView
+            android:id="@+id/dialog_message"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:minHeight="50dp"
+            android:layout_marginTop="12dp"
+            android:layout_marginRight="19.6dp"
+            android:layout_marginLeft="19.6dp"
+            android:gravity="center"
+            android:text="是否确定删除1项收藏"
+            android:textColor="@color/text_black_212121"
+            android:textSize="@dimen/ts30" />
+
+        <View
+            android:id="@+id/custom_line"
+            android:layout_width="match_parent"
+            android:layout_marginTop="20dp"
+            android:layout_height="1.0dip"
+            android:background="#dad9de" />
+
+        <LinearLayout
+            android:id="@+id/linlin"
+            android:layout_width="match_parent"
+            android:layout_height="45dip"
+            android:background="@color/transparent"
+            android:orientation="horizontal" >
+
+            <TextView
+                android:id="@+id/dialog_no"
+                android:layout_width="0.0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:background="@android:color/transparent"
+                android:gravity="center"
+                android:text="取消"
+                android:textColor="@color/text_212121"
+                android:textSize="@dimen/ts26"
+                 />
+
+            <View
+                android:id="@+id/dialog_line2"
+                android:layout_width="0.5dp"
+                android:layout_height="match_parent"
+                android:background="#dad9de" />
+
+            <!--#007aff-->
+            <TextView
+                android:id="@+id/dialog_ok"
+                android:layout_width="0.0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:background="@drawable/dialog_shape_btn_sure"
+                android:gravity="center"
+                android:text="确定"
+                android:textColor="@color/white"
+                android:textSize="@dimen/ts26" />
+        </LinearLayout>
+    </LinearLayout>
+
+</LinearLayout>

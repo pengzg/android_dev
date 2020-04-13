@@ -1,0 +1,145 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#3F51B5</color>
+    <color name="colorPrimaryDark">#303F9F</color>
+    <color name="colorAccent">#47aaff</color>
+
+    <!-- 公共 -->
+    <color name="white">#ffffff</color>
+    <color name="text_black_212121">#212121</color>
+    <color name="black">#000000</color>
+    <color name="transparent">#00000000</color>
+    <color name="tran">#e0000000</color>
+
+    <color name="text_red">#ED3A36</color>
+    <color name="text_blue">#47aaff</color>
+    <color name="text_gray_b3b3">#B3B3B3</color>
+    <color name="text_gray">#858585</color>
+    <color name="text_dark_red">#DA2D31</color>
+    <color name="text_333D44">#333D44</color>
+
+    <color name="text_gray_d1d1d1">#d1d1d1</color>
+    <color name="text_gray_cdcdcd">#CDCDCD</color>
+    <color name="text_gray_cecece">#CECECE</color>
+
+    <color name="title_bg">#47aaff</color>
+    <color name="color_blue">#47aaff</color>
+    <color name="color_blue_tinge">#6AB7FA</color>
+    <color name="color_699dff">#699DFF</color>
+    <color name="color_e3edff">#E3EDFF</color>
+
+    <color name="image_gray">#F0F0F0</color>
+
+    <color name="line_dcdcdc">#dcdcdc</color>
+    <color name="line_gray">#E1E1E1</color>
+    <color name="line_bfbfbf">#bfbfbf</color>
+    <color name="line_afafaf">#AFAFAF</color>
+    <color name="line_d2d5df">#D2D5DF</color>
+
+    <!--白色半透明覆盖颜色-->
+    <color name="bg_color_overlay">#aaffffff</color>
+    <!-- 黑色半透明 -->
+    <color name="tran_black">#50000000</color>
+    <color name="tran_black3">#30000000</color>
+
+    <!--底部tab文字颜色-->
+    <color name="tab_color_true">#47aaff</color>
+    <color name="tab_color_false">#a7a8ac</color>
+
+    <color name="background_tab_pressed">#6633B5E5</color>
+
+    <!--edittext颜色-->
+    <color name="indigo">#bfbfbf</color>
+    <color name="pink">#47aaff</color>
+
+    <color name="bg_date_oval">#A7C5F2</color>
+    <color name="color_6A9EFF">#6A9EFF</color>
+
+    <color name="color_9DDFF9">#9DDFF9</color>
+    <color name="color_9AEAFF">#9AEAFF</color>
+    <color name="color_feffff">#FEFFFF</color>
+    <color name="color_orange">#FF7D4A</color>
+    <color name="color_daeeff">#DAEEFF</color>
+    <color name="color_light_blue">#C9E1FF</color>
+    <color name="color_btn_bg_blue">#A3D4FF</color>
+
+    <color name="color_f0f0f0">#f0f0f0</color>
+    <color name="color_f1f1f1">#f1f1f1</color>
+    <color name="color_f3f3f3">#f3f3f3</color>
+    <color name="color_f4f4f4">#F4F4F4</color>
+    <color name="color_f5f5f5">#F5F5F5</color>
+    <color name="color_f6f6f6">#F6F6F6</color>
+    <color name="color_f9f9f9">#f9f9f9</color>
+    <color name="color_333333">#333333</color>
+    <color name="color_666666">#666666</color>
+    <color name="color_999999">#999999</color>
+    <color name="color_dedede">#DEDEDE</color>
+    <color name="color_ededed">#EDEDED</color>
+    <color name="color_e4e4e4">#E4E4E4</color>
+
+    <color name="color1">#8063FF</color>
+    <color name="color2">#669AFF</color>
+    <color name="color3">#62E8FF</color>
+
+    <color name="text_status">#2FB400</color>
+    <color name="text_status_lq">#F9931B</color>
+    <color name="text_status_gq">#FE2929</color>
+    <color name="text_status_cc">#FD027E</color>
+
+    <color name="color_f8f8f8">#F8F8F8</color>
+
+    <color name="color_progress">#fc2a01</color>
+
+    <color name="color_yellow">#FFBB33</color>
+    <color name="color_yellow_bright">#F9F98F</color>
+
+    <color name="bg_red_true">#F1344A</color>
+    <color name="bg_red_false">#FF5663</color>
+
+    <color name="bg_green_true">#5BB78A</color>
+    <color name="bg_green_false">#7ADBAB</color>
+
+    <color name="bg_light_blue_true">#5A99D4</color>
+    <color name="bg_light_blue_false">#8DC8FF</color>
+
+    <color name="bg_medium_blue_true">#2583D4</color>
+    <color name="bg_medium_blue_false">#47AAFF</color>
+
+    <color name="bg_purple_true">#A23390</color>
+    <color name="bg_purple_false">#C354B1</color>
+
+    <color name="bg_yellow_true">#FCA538</color>
+    <color name="bg_yellow_false">#FFBD6B</color>
+
+    <color name="bg_army_green_true">#89CB4F</color>
+    <color name="bg_army_green_false">#9BCD6C</color>
+
+    <!--打印机字体颜色-->
+    <color name="colorGrayPrimary">#999999</color>
+    <color name="colorGraySecondary">#CCCCCC</color>
+    <color name="colorGrayTertiary">#EEEEEE</color>
+    <color name="textColorPrimary">#333333</color>
+    <color name="textColorSecondary">#999999</color>
+
+    <color name="color_blue_1B82D2">#1B82D2</color>
+    <color name="color_blue_1D66B3">#1D66B3</color>
+
+    <!--自定义日历参数-->
+    <color name="red">#ef4646</color>
+    <color name="calendar_bg">#ffffffff</color>
+    <color name="custom_text_selected">#FFFFFFFF</color>
+    <color name="gray">#999999</color>
+    <color name="calendar_divider">#ffbababa</color>
+
+    <color name="calendar_selected_day_bg">#ff379bff</color>
+    <color name="calendar_highlighted_day_bg">#ccffcc</color>
+    <color name="calendar_selected_range_bg">#ff96caff</color>
+    <color name="calendar_text_inactive">#40778088</color>
+    <color name="calendar_text_active">#ff778088</color>
+    <color name="calendar_text_selected">#ffffffff</color>
+    <color name="calendar_text_unselectable">#7f778088</color>
+    <color name="calendar_inactive_month_bg">#ffd7d9db</color>
+    <color name="calendar_active_month_bg">#fff5f7f9</color>
+
+
+</resources>

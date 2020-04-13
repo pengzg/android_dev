@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:background="@color/white"
+              android:orientation="vertical">
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0.5dp"
+        android:background="@color/line_afafaf"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1">
+
+        <com.handmark.pulltorefresh.library.PullToRefreshScrollView
+            android:id="@+id/pull_scroll"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <com.xdjd.view.NoScrollListView
+                android:id="@+id/lv_main_storage"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingLeft="11dp"
+                android:paddingRight="11dp">
+            </com.xdjd.view.NoScrollListView>
+
+        </com.handmark.pulltorefresh.library.PullToRefreshScrollView>
+
+    </LinearLayout>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="@color/color_blue"
+        android:gravity="center"
+        android:visibility="gone"
+        android:text="打印"
+        android:textColor="@color/white"
+        android:textSize="@dimen/ts30"/>
+
+</LinearLayout>

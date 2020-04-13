@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:orientation="vertical"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent">
+
+    <com.handmark.pulltorefresh.library.PullToRefreshScrollView
+        android:id="@+id/pull_scroll"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <com.xdjd.view.NoScrollListView
+            android:id="@+id/lv_no_list"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+        </com.xdjd.view.NoScrollListView>
+    </com.handmark.pulltorefresh.library.PullToRefreshScrollView>
+
+    <com.xdjd.view.AnimatedExpandableListView
+        android:id="@+id/elv_order_goods"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/color_f5f5f5"
+        android:childDivider="@color/line_gray"
+        android:groupIndicator="@null"
+        android:visibility="gone"/>
+
+</LinearLayout>

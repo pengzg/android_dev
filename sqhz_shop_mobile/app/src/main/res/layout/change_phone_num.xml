@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <include layout="@layout/titlebar" />
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1px"
+        android:background="@color/line_gray" />
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1px"
+        android:layout_marginTop="20dp"
+        android:background="@color/line_gray" />
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:orientation="horizontal"
+        android:background="@color/title_bg" >
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="10dp"
+            android:text="手机号"
+            android:background="@null"
+            android:textSize="@dimen/ts30"
+            android:gravity="center_vertical" />
+        <EditText
+            android:id="@+id/modify_phoneNum"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:layout_marginLeft="20dp"
+            android:hint="请输入手机号"
+            android:background="@null"
+            android:inputType="number"
+            android:maxLength="11"
+            android:textSize="@dimen/ts30" />
+        <LinearLayout
+            android:id="@+id/mobile_del"
+            android:layout_width="40dp"
+            android:orientation="vertical"
+            android:gravity="center"
+            android:layout_height="match_parent">
+
+            <TextView
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:text="×"
+                android:gravity="center"
+                android:background="@drawable/shape_user_tel_del"
+                android:textColor="@color/text_df1122"/>
+        </LinearLayout>
+        <Button
+            android:id="@+id/get_smscode"
+            android:layout_width="65dp"
+            android:layout_height="25dp"
+            android:layout_marginRight="10dp"
+            android:text="获取验证码"
+            android:textSize="@dimen/ts24"
+            android:background="@drawable/person_center_smscode" />
+    </LinearLayout>
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1px"
+        android:background="@color/line_gray" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:orientation="horizontal"
+        android:background="@color/title_bg" >
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="10dp"
+            android:text="验证码"
+            android:textSize="@dimen/ts30"
+            android:gravity="center_vertical" />
+
+        <EditText
+            android:id="@+id/input_smscode"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:layout_marginLeft="20dp"
+            android:hint="请输入验证码"
+            android:background="@null"
+            android:inputType="number"
+            android:maxLength="4"
+            android:textSize="@dimen/ts30" />
+
+
+    </LinearLayout>
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1px"
+        android:background="@color/line_gray" />
+
+    <Button
+        android:id="@+id/save_new_phonNum"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginTop="50dp"
+        android:text="确认"
+        android:textSize="@dimen/ts30"
+        android:textColor="@color/text_FBFEFD"
+        android:background="@drawable/person_center_btn" />
+
+</LinearLayout>

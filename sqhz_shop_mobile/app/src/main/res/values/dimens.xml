@@ -1,0 +1,82 @@
+<resources>
+    <!-- Default screen margins, per the Android Design guidelines. -->
+    <dimen name="activity_horizontal_margin">16dp</dimen>
+    <dimen name="activity_vertical_margin">16dp</dimen>
+
+
+    <!-- title左侧字体大小-->
+    <dimen name="title_rightTextSize">16sp</dimen>
+    <!-- title栏高度 -->
+    <dimen name="height_top_bar">45dp</dimen>
+    <dimen name="title_height">60dp</dimen>
+    <!--main界面中间按钮距离底部的距离-->
+    <dimen name="main3_img_bottom">15dp</dimen>
+    <!--main界面中间按钮高度-->
+    <dimen name="main3_img">60dp</dimen>
+    <!--采购界面一级分类高度-->
+    <dimen name="purchase_class_one">45dp</dimen>
+    <dimen name="purchase_pw_screen_margin">47dp</dimen>
+    <!--采购页购物车图标大小-->
+    <dimen name="purchase_cart_img">60dp</dimen>
+    <dimen name="purchase_cart_tv_margingtop">10dp</dimen>
+
+    <!--条目左右间隔-->
+    <dimen name="distance_left_right">46px</dimen>
+
+    <!--title的px高度-->
+    <dimen name="title_height_px">45dp</dimen>
+
+    <!--字体大小-->
+    <dimen name="text_Size24">24px</dimen>
+    <dimen name="text_Size26">26px</dimen>
+    <dimen name="text_Size28">28px</dimen>
+    <dimen name="text_Size30">30px</dimen>
+    <dimen name="text_Size32">32px</dimen>
+    <dimen name="text_Size34">34px</dimen>
+    <dimen name="text_Size36">36px</dimen>
+    <dimen name="text_Size38">38px</dimen>
+    <dimen name="text_Size40">40px</dimen>
+    <dimen name="text_Size42">42px</dimen>
+    <dimen name="text_Size44">44px</dimen>
+    <dimen name="text_Size46">46px</dimen>
+    <dimen name="text_Size48">48px</dimen>
+    <dimen name="text_Size50">50px</dimen>
+    <dimen name="text_Size52">52px</dimen>
+    <dimen name="text_Size54">54px</dimen>
+    <dimen name="text_Size55">55px</dimen>
+    <dimen name="text_Size78">78px</dimen>
+    <dimen name="text_Size62">62px</dimen>
+    <dimen name="tv_size30">30px</dimen>
+    <dimen name="tv_size32">16sp</dimen>
+
+    <!--字体大小dp-->
+    <dimen name="ts18">9dp</dimen>
+    <dimen name="ts20">10dp</dimen>
+    <dimen name="ts22">11dp</dimen>
+    <dimen name="ts24">12dp</dimen>
+    <dimen name="ts26">13dp</dimen>
+    <dimen name="ts28">14dp</dimen>
+    <dimen name="ts30">15dp</dimen>
+    <dimen name="ts32">16dp</dimen>
+    <dimen name="ts34">17dp</dimen>
+    <dimen name="ts36">18dp</dimen>
+    <dimen name="ts60">30dp</dimen>
+
+
+    <!-- =======新的适配参数======= -->
+    <dimen name="common_margin">12dp</dimen>
+    <dimen name="common_padding">12dp</dimen>
+    <!--字体大小,用的是dp-->
+    <dimen name="fab_margin">16dp</dimen>
+
+    <!--自定义日历参数-->
+    <dimen name="calendar_day_headers_paddingbottom">4dp</dimen>
+    <dimen name="calendar_month_topmargin">10dp</dimen>
+    <dimen name="calendar_month_title_bottommargin">4dp</dimen>
+    <dimen name="calendar_text_title">16sp</dimen>
+    <dimen name="calendar_text_medium">14dp</dimen>
+    <dimen name="calendar_text_small">13sp</dimen>
+    <dimen name="dimen_margin_circle">4dp</dimen>
+    <dimen name="dimen_margin_circle.negative">-4dp</dimen>
+
+</resources>

@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:orientation="vertical">
+
+    <include layout="@layout/titlebar"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="30dp"
+            android:background="@color/colorGrayTertiary"
+            android:gravity="center_vertical"
+            android:paddingLeft="10dp"
+            android:text="打印机尺寸"
+            android:textColor="@color/textColorSecondary"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/white"
+            android:orientation="horizontal">
+
+            <LinearLayout
+                android:id="@+id/ll_printer"
+                android:layout_width="0dp"
+                android:layout_height="50dp"
+                android:layout_weight="1"
+                android:gravity="center_vertical"
+                android:orientation="horizontal"
+                android:layout_marginLeft="10dp"
+                android:paddingLeft="5dp"
+                android:paddingRight="10dp">
+
+                <ImageView
+                    android:id="@+id/iv_print"
+                    android:layout_width="25dp"
+                    android:layout_height="25dp"
+                    android:src="@mipmap/printer_small"/>
+
+                <TextView
+                    android:id="@+id/tv_printer_name"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:layout_marginLeft="10dp"
+                    android:text="80mm打印机"/>
+
+                <ImageView
+                    android:layout_width="15dp"
+                    android:layout_height="10dp"
+                    android:src="@mipmap/bottom_arrow"/>
+
+            </LinearLayout>
+
+            <RelativeLayout
+                android:layout_width="60dp"
+                android:layout_height="match_parent">
+
+                <Button
+                    android:id="@+id/btn_search"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="搜索"/>
+
+                <LinearLayout
+                    android:id="@+id/ll_bg"
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:layout_centerInParent="true"
+                    android:background="@drawable/progress_print_bg"
+                    android:visibility="gone"
+                    android:gravity="center">
+
+                    <ImageView
+                        android:id="@+id/spinnerImageView"
+                        android:layout_width="20dp"
+                        android:layout_height="20dp"
+                        android:layout_centerInParent="true"
+                        android:background="@drawable/spinner"/>
+
+                </LinearLayout>
+
+            </RelativeLayout>
+
+        </LinearLayout>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="30dp"
+            android:background="@color/colorGrayTertiary"
+            android:gravity="center_vertical"
+            android:paddingLeft="16dp"
+            android:text="设备列表(点击进行配置)"
+            android:textColor="@color/text_black_212121"
+            android:textSize="@dimen/ts28"/>
+
+        <ListView
+            android:id="@+id/lv_paired_devices"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:background="@color/white"
+            android:choiceMode="singleChoice"
+            android:divider="@android:drawable/divider_horizontal_bright"/>
+
+        <TextView
+            android:id="@+id/tv_printer_address_name"
+            android:layout_width="match_parent"
+            android:layout_height="30dp"
+            android:background="@color/color_blue"
+            android:gravity="center_vertical"
+            android:paddingLeft="@dimen/common_margin"
+            android:text="未设置打印机"
+            android:textColor="@color/white"
+            android:textSize="@dimen/ts28"/>
+
+    </LinearLayout>
+
+</LinearLayout>

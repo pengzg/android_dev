@@ -1,0 +1,509 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              xmlns:easeui="http://schemas.android.com/apk/res-auto"
+              xmlns:app="http://schemas.android.com/apk/res-auto"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:orientation="vertical">
+
+    <com.handmark.pulltorefresh.library.PullToRefreshScrollView
+        android:id="@+id/pull_scroll"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/white"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="53dp"
+                    android:gravity="center_vertical"
+                    android:orientation="horizontal"
+                    android:paddingLeft="10dp"
+                    android:paddingRight="10dp">
+
+                    <RelativeLayout
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_centerVertical="true"
+                            android:text="商品销售排行"
+                            android:textColor="@color/text_black_212121"
+                            android:textStyle="bold"/>
+
+                        <TextView
+                            android:id="@+id/tv_spxs_select"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentRight="true"
+                            android:layout_centerVertical="true"
+                            android:background="@drawable/bg_date_oval"
+                            android:drawablePadding="8dp"
+                            android:drawableRight="@mipmap/bottom_arrow"
+                            android:paddingBottom="3dp"
+                            android:paddingLeft="8dp"
+                            android:paddingRight="8dp"
+                            android:paddingTop="3dp"
+                            android:text="今日"
+                            android:textColor="@color/text_black_212121"
+                            android:textSize="@dimen/ts24"/>
+
+                    </RelativeLayout>
+
+                    <LinearLayout
+                        android:id="@+id/ll_spxs"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:gravity="right|center_vertical">
+
+                        <TextView
+                            android:id="@+id/tv_spxs_date"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginRight="10dp"
+                            android:text="2017-07-01~2017-07-27"
+                            android:textColor="@color/black"
+                            android:textSize="@dimen/ts24"/>
+
+                        <ImageView
+                            android:layout_width="13dp"
+                            android:layout_height="7dp"
+                            android:src="@mipmap/bottom_arrow"/>
+
+                    </LinearLayout>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="25dp"
+                    android:layout_marginBottom="5dp"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="10dp"
+                    android:background="@drawable/bg_ll_date"
+                    android:orientation="horizontal">
+                    <TextView
+                        android:id="@+id/btn_spxs_left"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:background="@drawable/bg_left_btn"
+                        android:gravity="center"
+                        android:text="前5"
+                        android:textColor="@color/white"
+                        android:textSize="@dimen/ts22"/>
+
+                    <TextView
+                        android:id="@+id/btn_spxs_right"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:gravity="center"
+                        android:text="前10"
+                        android:textSize="@dimen/ts22"/>
+
+                </LinearLayout>
+
+                <HorizontalScrollView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:fillViewport="true"
+                    android:paddingBottom="5dp"
+                    android:scrollbars="none">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@color/white"
+                        android:gravity="center"
+                        android:orientation="horizontal">
+
+                        <com.github.mikephil.charting.charts.BarChart
+                            android:id="@+id/chart_spxs"
+                            android:layout_width="match_parent"
+                            android:layout_height="150dp"/>
+
+                    </LinearLayout>
+
+                </HorizontalScrollView>
+
+                <LinearLayout
+                    android:id="@+id/ll_goods_sales_ranking"
+                    android:layout_width="match_parent"
+                    android:layout_height="30dp"
+                    android:background="@color/white"
+                    android:gravity="center_vertical|right"
+                    android:orientation="horizontal"
+                    android:paddingLeft="13dp"
+                    android:paddingRight="13dp">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginRight="10dp"
+                        android:text="详情"
+                        android:textSize="@dimen/ts24"/>
+
+                    <ImageView
+                        android:layout_width="12dp"
+                        android:layout_height="19dp"
+                        android:src="@mipmap/right_arrow"/>
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/white"
+                android:layout_marginTop="10dp"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="53dp"
+                    android:gravity="center_vertical"
+                    android:orientation="horizontal"
+                    android:paddingLeft="10dp"
+                    android:paddingRight="10dp">
+
+                    <RelativeLayout
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_centerVertical="true"
+                            android:text="商品退货排行"
+                            android:textColor="@color/text_black_212121"
+                            android:textStyle="bold"/>
+
+                        <TextView
+                            android:id="@+id/tv_spth_select"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentRight="true"
+                            android:layout_centerVertical="true"
+                            android:background="@drawable/bg_date_oval"
+                            android:drawablePadding="8dp"
+                            android:drawableRight="@mipmap/bottom_arrow"
+                            android:paddingBottom="3dp"
+                            android:paddingLeft="8dp"
+                            android:paddingRight="8dp"
+                            android:paddingTop="3dp"
+                            android:text="今日"
+                            android:textColor="@color/text_black_212121"
+                            android:textSize="@dimen/ts24"/>
+
+                    </RelativeLayout>
+
+                    <LinearLayout
+                        android:id="@+id/ll_spth"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:gravity="right|center_vertical">
+
+                        <TextView
+                            android:id="@+id/tv_spth_date"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginRight="10dp"
+                            android:text="2017-07-01~2017-07-27"
+                            android:textColor="@color/black"
+                            android:textSize="@dimen/ts24"/>
+
+                        <ImageView
+                            android:layout_width="13dp"
+                            android:layout_height="7dp"
+                            android:src="@mipmap/bottom_arrow"/>
+
+                    </LinearLayout>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="25dp"
+                    android:layout_marginBottom="5dp"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="10dp"
+                    android:background="@drawable/bg_ll_date"
+                    android:orientation="horizontal">
+                    <TextView
+                        android:id="@+id/btn_spth_left"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:background="@drawable/bg_left_btn"
+                        android:gravity="center"
+                        android:text="前5"
+                        android:textColor="@color/white"
+                        android:textSize="@dimen/ts22"/>
+
+                    <TextView
+                        android:id="@+id/btn_spth_right"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:gravity="center"
+                        android:text="前10"
+                        android:textSize="@dimen/ts22"/>
+
+                </LinearLayout>
+
+                <HorizontalScrollView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:fillViewport="true"
+                    android:paddingBottom="5dp"
+                    android:scrollbars="none">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@color/white"
+                        android:gravity="center"
+                        android:orientation="horizontal">
+
+                        <com.github.mikephil.charting.charts.BarChart
+                            android:id="@+id/chart_spth"
+                            android:layout_width="match_parent"
+                            android:layout_height="150dp"/>
+
+                    </LinearLayout>
+
+                </HorizontalScrollView>
+
+                <LinearLayout
+                    android:id="@+id/ll_goods_refund_ranking"
+                    android:layout_width="match_parent"
+                    android:layout_height="30dp"
+                    android:background="@color/white"
+                    android:gravity="center_vertical|right"
+                    android:orientation="horizontal"
+                    android:paddingLeft="13dp"
+                    android:paddingRight="13dp">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginRight="10dp"
+                        android:text="详情"
+                        android:textSize="@dimen/ts24"/>
+
+                    <ImageView
+                        android:layout_width="12dp"
+                        android:layout_height="19dp"
+                        android:src="@mipmap/right_arrow"/>
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/white"
+                android:layout_marginTop="10dp"
+                android:layout_marginBottom="10dp"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="53dp"
+                    android:gravity="center_vertical"
+                    android:orientation="horizontal"
+                    android:paddingLeft="10dp"
+                    android:paddingRight="10dp">
+
+                    <RelativeLayout
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_centerVertical="true"
+                            android:text="库存数量"
+                            android:textColor="@color/text_black_212121"
+                            android:textStyle="bold"/>
+
+                        <TextView
+                            android:id="@+id/tv_kcsl_select"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentRight="true"
+                            android:layout_centerVertical="true"
+                            android:background="@drawable/bg_date_oval"
+                            android:drawablePadding="8dp"
+                            android:drawableRight="@mipmap/bottom_arrow"
+                            android:paddingBottom="3dp"
+                            android:paddingLeft="8dp"
+                            android:paddingRight="8dp"
+                            android:paddingTop="3dp"
+                            android:visibility="gone"
+                            android:text="今日"
+                            android:textColor="@color/text_black_212121"
+                            android:textSize="@dimen/ts24"/>
+
+                    </RelativeLayout>
+
+                    <LinearLayout
+                        android:id="@+id/ll_kcsl"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:visibility="gone"
+                        android:gravity="right|center_vertical">
+
+                        <TextView
+                            android:id="@+id/tv_kcsl_date"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginRight="10dp"
+                            android:text="2017-07-01~2017-07-27"
+                            android:textColor="@color/black"
+                            android:textSize="@dimen/ts24"/>
+
+                        <ImageView
+                            android:layout_width="13dp"
+                            android:layout_height="7dp"
+                            android:src="@mipmap/bottom_arrow"/>
+
+                    </LinearLayout>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="25dp"
+                    android:layout_marginBottom="5dp"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="10dp"
+                    android:background="@drawable/bg_ll_date"
+                    android:orientation="horizontal">
+                    <TextView
+                        android:id="@+id/btn_kcsl_left"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:background="@drawable/bg_left_btn"
+                        android:gravity="center"
+                        android:text="前5"
+                        android:textColor="@color/text_gray"
+                        android:textSize="@dimen/ts22"/>
+
+                    <TextView
+                        android:id="@+id/btn_kcsl_right"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:gravity="center"
+                        android:text="前10"
+                        android:textSize="@dimen/ts22"/>
+
+                </LinearLayout>
+
+                <HorizontalScrollView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:fillViewport="true"
+                    android:paddingBottom="5dp"
+                    android:scrollbars="none">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@color/white"
+                        android:gravity="center"
+                        android:orientation="horizontal">
+
+                        <com.github.mikephil.charting.charts.BarChart
+                            android:id="@+id/chart_kcsl"
+                            android:layout_width="match_parent"
+                            android:layout_height="150dp"/>
+
+                    </LinearLayout>
+
+                </HorizontalScrollView>
+
+                <LinearLayout
+                    android:id="@+id/ll_stock_num"
+                    android:layout_width="match_parent"
+                    android:layout_height="30dp"
+                    android:background="@color/white"
+                    android:gravity="center_vertical|right"
+                    android:orientation="horizontal"
+                    android:paddingLeft="13dp"
+                    android:paddingRight="13dp">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginRight="10dp"
+                        android:text="详情"
+                        android:textSize="@dimen/ts24"/>
+
+                    <ImageView
+                        android:layout_width="12dp"
+                        android:layout_height="19dp"
+                        android:src="@mipmap/right_arrow"/>
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+
+
+            <LinearLayout
+                android:id="@+id/ll_stock_balance"
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+                android:background="@color/white"
+                android:gravity="center_vertical"
+                android:orientation="horizontal"
+                android:layout_marginTop="10dp"
+                android:visibility="gone"
+                android:paddingLeft="13dp"
+                android:paddingRight="13dp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="库存余额"
+                    android:textColor="@color/text_black_212121"
+                    android:textSize="@dimen/ts30"/>
+
+                <ImageView
+                    android:layout_width="12dp"
+                    android:layout_height="19dp"
+                    android:src="@mipmap/right_arrow"/>
+
+            </LinearLayout>
+
+        </LinearLayout>
+    </com.handmark.pulltorefresh.library.PullToRefreshScrollView>
+
+</LinearLayout>

@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+
+    <!--private String[] retailName = new String[]{"待送货", "待取货", "送货中", "已完成",-->
+    <!--"已取消", "我的收益", "顾客评价", "运营报表", "商品管理", "库存盘点"};//"收银对账"-->
+    <!--private int[] retailImg = new int[]{R.drawable.retail_for_delivery, R.drawable.retail_for_pickup, R.drawable.in_the_delivery,-->
+    <!--R.drawable.retail_complete, R.drawable.retail_cancel, R.drawable.retail_earnings, R.drawable.retail_customer_evaluation,-->
+    <!--R.drawable.retail_operating_reports, R.drawable.retail_goods_mange, R.drawable.retail_stock_taking};//, R.drawable.retail_cashier_check-->
+
+    <!--零售列表数据-->
+    <string-array name="all_retail_name">
+        <item>待送货</item>
+        <item>待取货</item>
+        <item>送货中</item>
+        <item>已完成</item>
+        <item>已取消</item>
+        <item>我的收益</item>
+        <item>顾客评价</item>
+        <item>运营报表</item>
+        <item>商品管理</item>
+        <item>库存盘点</item>
+    </string-array>
+
+    <string-array name="all_retail_img">
+        <!--定死不能更改的-->
+        <item>R.drawable.retail_for_delivery</item>
+        <item>R.drawable.retail_for_pickup</item>
+        <item>R.drawable.in_the_delivery</item>
+        <item>R.drawable.retail_complete</item>
+        <item>R.drawable.retail_cancel</item>
+        <item>R.drawable.retail_earnings</item>
+        <item>R.drawable.retail_customer_evaluation</item>
+        <item>R.drawable.retail_operating_reports</item>
+        <item>R.drawable.retail_goods_mange</item>
+        <item>R.drawable.retail_stock_taking</item>
+    </string-array>
+
+
+    <string-array name="all_retail_id">
+        <item>001</item>
+        <item>002</item>
+        <item>003</item>
+        <item>004</item>
+        <item>005</item>
+        <item>006</item>
+        <item>007</item>
+        <item>008</item>
+        <item>009</item>
+        <item>010</item>
+    </string-array>
+
+
+    <!--private String[] purchaseName = new String[]{"统配进货", "预售进货", "热门活动", "优惠券",-->
+    <!--"待付款", "待收货", "已完成", "购物车", "我常买","扫码下单", "我的收藏"};-->
+    <!--private int[] purchaseImg = new int[]{R.drawable.stock, R.drawable.in_the_delivery, R.drawable.popular_activities,-->
+    <!--R.drawable.coupon, R.drawable.for_the_payment, R.drawable.for_the_goods, R.drawable.purchase_complete,-->
+    <!--R.drawable.cart, R.drawable.wochangmai,R.mipmap.qr_place_an_order, R.drawable.my_collect};-->
+
+    <!--全部中采购数据列表-->
+    <string-array name="all_purchase_name">
+        <item>统配进货</item>
+        <item>预售进货</item>
+        <item>热门活动</item>
+        <item>优惠券</item>
+        <item>待付款</item>
+        <item>待收货</item>
+        <item>已完成</item>
+        <item>购物车</item>
+        <item>我常买</item>
+        <item>扫码下单</item>
+        <item>我的收藏</item>
+    </string-array>
+
+    <string-array name="all_purchase_img">
+        <!--定死不能更改的-->
+        <item>R.drawable.stock</item>
+        <item>R.drawable.in_the_delivery</item>
+        <item>R.drawable.popular_activities</item>
+        <item>R.drawable.coupon</item>
+        <item>R.drawable.for_the_payment</item>
+        <item>R.drawable.for_the_goods</item>
+        <item>R.drawable.purchase_complete</item>
+        <item>R.drawable.cart</item>
+        <item>R.drawable.wochangmai</item>
+        <item>R.drawable.qr_place_an_order</item>
+        <item>R.drawable.my_collect</item>
+    </string-array>
+
+    <string-array name="all_purchase_id">
+        <item>001</item>
+        <item>002</item>
+        <item>003</item>
+        <item>004</item>
+        <item>005</item>
+        <item>006</item>
+        <item>007</item>
+        <item>008</item>
+        <item>009</item>
+        <item>010</item>
+        <item>011</item>
+    </string-array>
+
+
+</resources>

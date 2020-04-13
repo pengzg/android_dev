@@ -1,0 +1,224 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.zhy.autolayout.AutoLinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/transparent"
+    android:orientation="vertical">
+
+    <com.zhy.autolayout.AutoLinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <include layout="@layout/titlebar"/>
+
+    </com.zhy.autolayout.AutoLinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0.5dp"
+        android:background="@color/line_gray"/>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@android:color/transparent">
+
+        <SurfaceView
+            android:id="@+id/capture_preview"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"/>
+
+        <RelativeLayout
+            android:id="@+id/capture_container"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <ImageView
+                android:id="@+id/capture_mask_top"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_alignParentTop="true"
+                android:background="@drawable/shadow"/>
+
+            <RelativeLayout
+                android:id="@+id/capture_crop_view"
+                android:layout_width="match_parent"
+                android:layout_height="180dp"
+                android:layout_below="@id/capture_mask_top">
+
+                <ImageView
+                    android:id="@+id/capture_scan_line"
+                    android:layout_width="match_parent"
+                    android:layout_height="5dp"
+                    android:layout_alignParentTop="true"
+                    android:layout_marginBottom="5dp"
+                    android:layout_marginTop="5dp"
+                    android:scaleType="fitXY"
+                    android:src="@drawable/scan_line"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginTop="30px"
+                    android:text="对准条形码扫描立刻下单"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/text_Size38"/>
+
+
+                <!--条形码编辑输入-->
+                <RelativeLayout
+                    android:id="@+id/bar_code_edit_rl"
+                    android:layout_width="match_parent"
+                    android:layout_height="180dp"
+                    android:background="#394148"
+                    android:visibility="gone">
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerInParent="true"
+                        android:gravity="center_horizontal"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="请输入商品条形码上的数字"
+                            android:textColor="@color/white"
+                            android:textSize="@dimen/text_Size38"/>
+
+                        <LinearLayout
+                            android:layout_width="900px"
+                            android:layout_height="100px"
+                            android:layout_marginTop="30px"
+                            android:orientation="horizontal">
+
+                            <EditText
+                                android:id="@+id/bar_code_edit"
+                                android:layout_width="0dp"
+                                android:layout_height="match_parent"
+                                android:layout_weight="1"
+                                android:background="@drawable/shape_scanning_bg"
+                                android:inputType="number"
+                                android:padding="10px"
+                                android:textColor="@color/white"
+                                android:textSize="@dimen/text_Size36"/>
+
+                            <Button
+                                android:id="@+id/add_cart_btn"
+                                android:layout_width="150px"
+                                android:layout_height="match_parent"
+                                android:background="@color/color_EC193A"
+                                android:paddingLeft="20px"
+                                android:paddingRight="20px"
+                                android:text="确定"
+                                android:textColor="@color/white"
+                                android:textSize="@dimen/text_Size36"/>
+
+                        </LinearLayout>
+
+                    </LinearLayout>
+
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:id="@+id/import_select_rl"
+                    android:layout_width="100px"
+                    android:layout_height="60px"
+                    android:layout_centerVertical="true">
+
+                    <TextView
+                        android:id="@+id/edit_select"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerInParent="true"
+                        android:text="编辑"
+                        android:textColor="@color/white"
+                        android:textSize="@dimen/text_Size32"/>
+
+                </RelativeLayout>
+
+            </RelativeLayout>
+
+            <ImageView
+                android:id="@+id/capture_mask_bottom"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:layout_below="@id/capture_crop_view"
+                android:background="@drawable/shadow"/>
+
+            <ImageView
+                android:id="@+id/capture_mask_left"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_above="@id/capture_mask_bottom"
+                android:layout_alignParentLeft="true"
+                android:layout_below="@id/capture_mask_top"
+                android:layout_toLeftOf="@id/capture_crop_view"
+                android:background="@drawable/shadow"/>
+
+            <ImageView
+                android:id="@+id/capture_mask_right"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_above="@id/capture_mask_bottom"
+                android:layout_alignParentRight="true"
+                android:layout_below="@id/capture_mask_top"
+                android:layout_toRightOf="@id/capture_crop_view"
+                android:background="@drawable/shadow"/>
+
+            <FrameLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_below="@id/capture_crop_view">
+
+                <LinearLayout
+                    android:id="@+id/scanning_hint_ll"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:background="@color/white"
+                    android:gravity="center"
+                    android:orientation="vertical">
+
+                    <ImageView
+                        android:layout_width="200px"
+                        android:layout_height="200px"
+                        android:src="@mipmap/qr_img"/>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="100px"
+                        android:text="扫一扫，立即下单"
+                        android:textColor="@color/text_gray"/>
+
+                </LinearLayout>
+
+
+                <com.zhy.autolayout.AutoLinearLayout
+                    android:id="@+id/cart_ll"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:background="@color/white"
+                    android:orientation="vertical"
+                    android:visibility="gone">
+
+                    <ListView
+                        android:id="@+id/cart_listview"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:divider="@color/white"
+                        android:dividerHeight="60px"></ListView>
+
+                </com.zhy.autolayout.AutoLinearLayout>
+
+            </FrameLayout>
+        </RelativeLayout>
+
+    </RelativeLayout>
+
+</com.zhy.autolayout.AutoLinearLayout>

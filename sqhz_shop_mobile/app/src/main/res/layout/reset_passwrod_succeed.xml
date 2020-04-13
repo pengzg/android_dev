@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center_horizontal" >
+
+    <include layout="@layout/titlebar"/>
+    <ImageView
+        android:layout_width="412px"
+        android:layout_height="463px"
+        android:layout_marginTop="319px"
+        android:layout_marginLeft="563px"
+        android:layout_marginRight="563px"
+        android:src="@drawable/suceed_show"
+        android:layout_gravity="center_horizontal" />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="80px"
+        android:text="重设密码成功!"
+        android:textColor="@color/black"
+        android:textSize="@dimen/ts60" />
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="54px"
+        android:gravity="center_horizontal"
+        android:text="请牢记您的新密码"
+        android:textSize="@dimen/ts28"
+        android:textColor="@color/text_212121" />
+    <Button
+        android:id="@+id/reset_ok"
+        android:layout_width="match_parent"
+        android:layout_height="130px"
+        android:layout_marginTop="185px"
+        android:layout_marginLeft="71px"
+        android:layout_marginRight="71px"
+        android:text="确定"
+        android:gravity="center"
+        android:textSize="@dimen/ts30"
+        android:textColor="@color/text_FBFEFD"
+        android:background="@drawable/select_login_btn"  />
+
+
+</LinearLayout>

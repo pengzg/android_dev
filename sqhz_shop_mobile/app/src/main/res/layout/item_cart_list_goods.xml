@@ -1,0 +1,210 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="match_parent"
+              android:layout_height="wrap_content"
+              android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="80dp"
+        android:orientation="horizontal">
+
+        <RelativeLayout
+            android:id="@+id/child_rl"
+            android:layout_width="45dp"
+            android:layout_height="match_parent">
+
+            <ImageView
+                android:id="@+id/child_iv"
+                android:layout_width="wrap_content"
+                android:layout_height="20dp"
+                android:layout_centerInParent="true"
+                android:scaleType="centerInside"
+                android:src="@drawable/cart_left_point_select"/>
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="50dp"
+            android:layout_height="match_parent"
+            android:paddingBottom="10px"
+            android:paddingTop="5px">
+
+            <ImageView
+                android:id="@+id/goods_iv"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:scaleType="centerInside"
+                android:src="@drawable/default_pic"/>
+
+            <TextView
+                android:id="@+id/presell_tv"
+                android:layout_width="match_parent"
+                android:layout_height="15dp"
+                android:layout_alignParentBottom="true"
+                android:background="@color/tran_black3"
+                android:gravity="center"
+                android:text="预售"
+                android:textColor="@color/white"
+                android:textSize="@dimen/ts28"/>
+
+        </RelativeLayout>
+
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="5dp"
+            android:layout_weight="1"
+            android:gravity="center_horizontal"
+            android:orientation="horizontal"
+            android:paddingTop="2dp">
+
+            <LinearLayout
+                android:id="@+id/item_goods_ll"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:orientation="vertical"
+            >
+
+                <TextView
+                    android:id="@+id/goods_name"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:ellipsize="end"
+                    android:lines="2"
+                    android:minLines="2"
+                    android:text="智利进口红酒 智象美露干红葡萄酒750ml*6瓶"
+                    android:textColor="@color/text_black_212121"
+                    android:textSize="@dimen/ts28"/>
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="2dp"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:id="@+id/goods_start_num"
+                        android:layout_width="60dp"
+                        android:layout_height="wrap_content"
+                        android:text="起订数量:1"
+                        android:textColor="@color/text_555"
+                        android:textSize="@dimen/ts24"/>
+
+                    <TextView
+                        android:id="@+id/goods_stock"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="2dp"
+                        android:text="库存:30"
+                        android:textColor="@color/text_555"
+                        android:textSize="@dimen/ts26"/>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="15dp"
+                    android:layout_marginTop="2dp"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:id="@+id/goods_wholesale_price"
+                        android:layout_width="wrap_content"
+                        android:layout_height="15dp"
+                        android:text="¥11"
+                        android:textColor="@color/text_df1122"
+                        android:textSize="@dimen/ts26"/>
+
+                    <!-- <TextView
+                         android:id="@+id/goods_batch_price"
+                         android:layout_width="wrap_content"
+                         android:layout_height="wrap_content"
+                         android:layout_marginLeft="15px"
+                         android:text="箱规价:499.00"
+                         android:textColor="@color/text_black_212121"
+                         android:textSize="@dimen/text_Size28"/>-->
+                </LinearLayout>
+
+            </LinearLayout>
+
+            <RelativeLayout
+                android:layout_width="100dp"
+                android:layout_height="match_parent"
+                android:paddingRight="10dp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:text="常温"
+                    android:textColor="@color/color_f07e1e"
+                    android:textSize="@dimen/ts26"/>
+
+                <RelativeLayout
+                    android:id="@+id/rl_edit_num"
+                    android:layout_width="80dp"
+                    android:layout_height="25dp"
+                    android:layout_alignParentRight="true"
+                    android:layout_marginTop="25dp">
+
+                    <ImageView
+                        android:id="@+id/goods_minus_iv"
+                        android:layout_width="25dp"
+                        android:layout_height="match_parent"
+                        android:src="@drawable/minus"/>
+
+                    <TextView
+                        android:id="@+id/goods_buy_num"
+                        android:layout_width="40dp"
+                        android:layout_height="match_parent"
+                        android:layout_centerInParent="true"
+                        android:gravity="center"
+                        android:text="135"
+                        android:textColor="@color/text_df1122"
+                        android:textSize="@dimen/ts26"/>
+
+                    <ImageView
+                        android:id="@+id/goods_plus_iv"
+                        android:layout_width="25dp"
+                        android:layout_height="match_parent"
+                        android:layout_alignParentRight="true"
+                        android:src="@drawable/plus"/>
+
+                </RelativeLayout>
+
+            </RelativeLayout>
+
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/delete"
+            android:layout_width="220px"
+            android:layout_height="match_parent"
+            android:layout_alignParentRight="true"
+            android:background="@color/color_EC193A"
+            android:gravity="center"
+            android:text="删除"
+            android:textColor="@color/white"
+            android:textSize="@dimen/ts30"
+            android:visibility="gone"/>
+
+
+    </LinearLayout>
+
+
+    <TextView
+        android:id="@+id/goods_total_amount"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="right"
+        android:paddingBottom="2dp"
+        android:paddingRight="40px"
+        android:paddingTop="2dp"
+        android:text="小计:10.00"
+        android:textColor="@color/text_df1122"
+        android:textSize="@dimen/ts26"/>
+
+</LinearLayout>

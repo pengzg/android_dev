@@ -1,0 +1,143 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/color_blue"
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        android:paddingLeft="10dp"
+        android:paddingRight="10dp">
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/tv_order_id"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="1295"
+                android:textColor="@color/white"
+                android:textSize="@dimen/ts26"/>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/tv_salesman_name"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="元弓"
+                    android:textColor="@color/color_9AEAFF"
+                    android:textSize="@dimen/ts26"/>
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/tv_order_rejected"
+            android:layout_width="35dp"
+            android:layout_height="35dp"
+            android:layout_margin="4dp"
+            android:background="@color/color_feffff"
+            android:gravity="center"
+            android:maxEms="2"
+            android:padding="2dp"
+            android:text="订单拒收"
+            android:textColor="@color/color_orange"
+            android:textSize="@dimen/ts24"/>
+
+        <TextView
+            android:id="@+id/tv_no_distribution"
+            android:layout_width="35dp"
+            android:layout_height="35dp"
+            android:layout_margin="4dp"
+            android:background="@color/color_feffff"
+            android:gravity="center"
+            android:maxEms="2"
+            android:padding="2dp"
+            android:text="暂不配送"
+            android:textColor="@color/color_orange"
+            android:textSize="@dimen/ts24"/>
+
+        <TextView
+            android:id="@+id/tv_order_clear"
+            android:layout_width="35dp"
+            android:layout_height="35dp"
+            android:layout_margin="4dp"
+            android:background="@color/color_feffff"
+            android:gravity="center"
+            android:maxEms="2"
+            android:padding="2dp"
+            android:text="订单清零"
+            android:textColor="@color/color_orange"
+            android:textSize="@dimen/ts24"/>
+
+    </LinearLayout>
+
+    <com.xdjd.view.NoScrollListView
+        android:id="@+id/lv_order_goods"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+    </com.xdjd.view.NoScrollListView>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="0.5dp"
+            android:background="@color/line_gray"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:background="@color/white"
+            android:gravity="center_vertical"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/tv_goods_num"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="12dp"
+                android:layout_weight="1"
+                android:text="共0件"/>
+
+            <TextView
+                android:id="@+id/tv_order_amount"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="15dp"
+                android:textColor="@color/text_dark_red"
+                android:text="0.00"
+                android:textSize="@dimen/ts26"/>
+
+            <TextView
+                android:id="@+id/tv_submit"
+                android:layout_width="95dp"
+                android:layout_height="match_parent"
+                android:background="@color/color_blue"
+                android:gravity="center"
+                android:textStyle="bold"
+                android:text="去结算"
+                android:textColor="@color/white"
+                android:textSize="@dimen/ts32"/>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</LinearLayout>

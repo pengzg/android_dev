@@ -1,0 +1,145 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="106px"
+        android:orientation="horizontal"
+        android:gravity="center_vertical" >
+        <TextView
+            android:layout_width="154px"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="50px"
+            android:text="品名/规格"
+            android:textSize="@dimen/text_Size44" />
+
+        <TextView
+            android:layout_width ="230px"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="486px"
+            android:text="要货数量/规格"
+            android:textSize="@dimen/text_Size44" />
+
+        <TextView
+            android:layout_width="230px"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="330px"
+            android:layout_marginRight="50px"
+            android:gravity="right"
+            android:text="发货数量金额"
+            android:textSize="@dimen/text_Size44"/>
+    </LinearLayout>
+    <View
+        android:layout_width ="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/line_gray"  />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="360px"
+        android:orientation="horizontal"
+        android:gravity="center_vertical" >
+
+        <LinearLayout
+            android:layout_width="478px"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_marginLeft="50px" >
+
+            <TextView
+                android:id="@+id/goods_name"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="红葡萄酒"
+                android:textSize="@dimen/text_Size44"/>
+
+            <TextView
+                android:id="@+id/goods_code"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="30px"
+                android:text="10000000"
+                android:textSize="@dimen/text_Size44"/>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="30px"
+                android:orientation="horizontal" >
+                <ImageView
+                    android:layout_width="22px"
+                    android:layout_height="27px"
+                    android:src="@drawable/dollar"
+                    android:textSize="@dimen/text_Size44"/>
+
+                <TextView
+                    android:id="@+id/goods_price"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10px"
+                    android:text="499.00" />
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="30px"
+                android:orientation="horizontal" >
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="规格 ："
+                    android:textSize="@dimen/text_Size44"/>
+                <TextView
+                    android:id="@+id/goos_norms"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10px"
+                    android:text="499.00"
+                    android:textSize="@dimen/text_Size44"/>
+            </LinearLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_marginLeft="160px"
+            android:gravity="center_horizontal" >
+            <TextView
+                android:id="@+id/buy_num"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="3"
+                android:textSize="@dimen/text_Size44"/>
+            <TextView
+                android:id="@+id/buy_total"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="1497.00"
+                android:textSize="@dimen/text_Size44"/>
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_marginRight="50px"
+            android:layout_marginLeft="200px"
+            android:gravity="center_horizontal" >
+            <TextView
+                android:id="@+id/send_num"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="3"
+                android:textSize="@dimen/text_Size44"/>
+            <TextView
+                android:id="@+id/send_total"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="1497.00"
+                android:textSize="@dimen/text_Size44"/>
+        </LinearLayout>
+    </LinearLayout>
+
+
+</LinearLayout>

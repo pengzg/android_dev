@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="bottom"
+    android:orientation="vertical">
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1" />
+
+    <LinearLayout
+        android:id="@+id/popup_comment_linearLayout_inputview"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#F7F7F7"
+        android:gravity="bottom"
+        android:minHeight="45dp"
+        android:orientation="horizontal">
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="12dp"
+            android:layout_weight="1"
+            android:orientation="vertical">
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="7.68dp" />
+
+            <EditText
+                android:id="@+id/popup_comment_editText_comment"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/comment_bg"
+                android:hint="请输入回复内容..."
+                android:lineSpacingExtra="3dp"
+                android:maxLength="250"
+                android:maxLines="6"
+                android:minHeight="29.64dp"
+                android:padding="3dp"
+                android:textColor="#333333"
+                android:textColorHint="#aaaaaa"
+                android:textSize="@dimen/ts28" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="7.68dp" />
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/popup_comment_textView_send"
+            android:layout_width="48dp"
+            android:layout_height="45dp"
+            android:gravity="center"
+            android:text="回复"
+            android:textColor="@color/text_gray"
+            android:textSize="@dimen/ts28" />
+    </LinearLayout>
+
+</LinearLayout>
