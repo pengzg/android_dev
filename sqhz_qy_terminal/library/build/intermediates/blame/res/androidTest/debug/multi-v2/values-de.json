@@ -1,0 +1,64 @@
+{
+    "logs": [
+        {
+            "outputFile": "D:\\a_workspace\\sqhz_water_terminal\\library\\build\\intermediates\\res\\merged\\androidTest\\debug\\values-de\\values-de.xml",
+            "map": [
+                {
+                    "source": "D:\\a_workspace\\sqhz_water_terminal\\library\\build\\intermediates\\bundles\\debug\\res\\values-de\\values-de.xml",
+                    "from": {
+                        "startLines": "2,3,4",
+                        "startColumns": "4,4,4",
+                        "startOffsets": "55,136,204",
+                        "endColumns": "80,67,86",
+                        "endOffsets": "131,199,286"
+                    }
+                }
+            ]
+        },
+        {
+            "outputFile": "D:\\a_workspace\\sqhz_water_terminal\\library\\build\\intermediates\\incremental\\mergeDebugAndroidTestResources\\merged.dir\\values-de\\values-de.xml",
+            "map": [
+                {
+                    "source": "D:\\a_workspace\\sqhz_water_terminal\\library\\build\\intermediates\\bundles\\debug\\res\\values-de\\values-de.xml",
+                    "from": {
+                        "startLines": "2,3,4",
+                        "startColumns": "4,4,4",
+                        "startOffsets": "55,136,204",
+                        "endColumns": "80,67,86",
+                        "endOffsets": "131,199,286"
+                    }
+                }
+            ]
+        },
+        {
+            "outputFile": "D:\\a_workspace\\sqhz_water_terminal_2B\\library\\build\\intermediates\\res\\merged\\androidTest\\debug\\values-de\\values-de.xml",
+            "map": [
+                {
+                    "source": "D:\\a_workspace\\sqhz_water_terminal_2B\\library\\build\\intermediates\\bundles\\debug\\res\\values-de\\values-de.xml",
+                    "from": {
+                        "startLines": "2,3,4",
+                        "startColumns": "4,4,4",
+                        "startOffsets": "55,136,204",
+                        "endColumns": "80,67,86",
+                        "endOffsets": "131,199,286"
+                    }
+                }
+            ]
+        },
+        {
+            "outputFile": "D:\\a_workspace\\sqhz_water_terminal_2B\\library\\build\\intermediates\\incremental\\mergeDebugAndroidTestResources\\merged.dir\\values-de\\values-de.xml",
+            "map": [
+                {
+                    "source": "D:\\a_workspace\\sqhz_water_terminal_2B\\library\\build\\intermediates\\bundles\\debug\\res\\values-de\\values-de.xml",
+                    "from": {
+                        "startLines": "2,3,4",
+                        "startColumns": "4,4,4",
+                        "startOffsets": "55,136,204",
+                        "endColumns": "80,67,86",
+                        "endOffsets": "131,199,286"
+                    }
+                }
+            ]
+        }
+    ]
+}
