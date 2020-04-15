@@ -15,7 +15,6 @@ import com.bikejoy.utils.JsonUtils;
 import com.bikejoy.utils.LogUtils;
 import com.bikejoy.utils.ProgressUtils;
 import com.bikejoy.utils.UIUtils;
-import com.bikejoy.utils.UserInfoUtils;
 
 import org.json.JSONObject;
 

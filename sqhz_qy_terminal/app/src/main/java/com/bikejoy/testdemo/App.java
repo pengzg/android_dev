@@ -31,10 +31,8 @@ import com.umeng.message.PushAgent;
 import com.umeng.message.UmengMessageHandler;
 import com.umeng.message.UmengNotificationClickHandler;
 import com.umeng.message.entity.UMessage;
-import com.bikejoy.utils.CrashHandler;
 import com.bikejoy.utils.DynamicTimeFormat;
 import com.bikejoy.utils.LogUtils;
-import com.bikejoy.utils.UserInfoUtils;
 import com.bikejoy.utils.http.AsyncHttpUtil;
 import com.bikejoy.utils.http.operation.L_RequestParams;
 import com.bikejoy.utils.http.url.M_Url;
@@ -64,7 +62,6 @@ public class App extends MobApplication {
     public LocationService locationService;
     public Vibrator mVibrator;
 
-    UserBean mUserBean;
 
     static {
         AppCompatDelegate.setCompatVectorFromResourcesEnabled(true);//启用矢量图兼容
@@ -119,14 +116,7 @@ public class App extends MobApplication {
 
         initUmeng();//初始化友盟推送
 
-        //初始化错误监听
-        CrashHandler catchHandler = CrashHandler.getInstance();
-        catchHandler.init(this);
-        LogUtils.e("myapplication", "是否有异常信息:" + UserInfoUtils.readError(this));
-        //上传错误文档
-        if ("1".equals(UserInfoUtils.readIsErrorFile(this))) {
-            goReportError();
-        }
+
     }
 
     @Override
@@ -286,101 +276,7 @@ public class App extends MobApplication {
                 //消息跳转模块  1 app 2 h5页面
                 //                private String mp_jump_model;
                 Intent intent;
-                if ("1".equals(map.get("model"))) {
-                    //1 h5 2 活动 3 商品 4 消息详情 5订单6配送任务 7会员列表
-                    switch (map.get("jumpType")) {
-                        case "5":
-                            intent = new Intent(context, OrderDetailActivity.class);
-                            intent.setFlags(Intent.FLAG_ACTIVITY_NEW_TASK);
-                            intent.putExtra("orderId", map.get("jumpValue"));
-                            startActivity(intent);
-                            break;
-                        case "6":
-                            intent = new Intent(context, DeliveryOrderDetailActivity.class);
-                            intent.setFlags(Intent.FLAG_ACTIVITY_NEW_TASK);
-                            intent.putExtra("odmId", map.get("jumpValue"));
-                            startActivity(intent);
-                            break;
-                        case "7":
-                            //                            if ("1".equals(UserInfoUtils.getUser(context).getUsertype())) {//管理员端
-                            //                                intent = new Intent(context, AdministratorMainActivity.class);
-                            //                            } else {//业务员
-                            intent = new Intent(context, MainActivity.class);
-                            //                            }
-                            intent.putExtra("message", "message");
-                            intent.setFlags(Intent.FLAG_ACTIVITY_NEW_TASK);
-                            intent.addFlags(Intent.FLAG_ACTIVITY_SINGLE_TOP);
-                            startActivity(intent);
-                            break;
-                        case "8":
-                            intent = new Intent(context, StorehouseThreeDetailActivity.class);
-                            intent.setFlags(Intent.FLAG_ACTIVITY_NEW_TASK);
-                            intent.putExtra("storeId", map.get("jumpValue"));
-                            startActivity(intent);
-                            break;
-                        case "9":
-                            intent = new Intent(context, StorehouseThreeDetailActivity.class);
-                            intent.setFlags(Intent.FLAG_ACTIVITY_NEW_TASK);
-                            intent.putExtra("storeId", map.get("jumpValue"));
-                            startActivity(intent);
-                            break;
-                        case "10":
-                            intent = new Intent(context, GetWaterRecordActivity.class);
-                            intent.setFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP);
-                            intent.addFlags(Intent.FLAG_ACTIVITY_SINGLE_TOP);
-                            intent.putExtra("recordId", map.get("jumpValue"));
-                            startActivity(intent);
-                            break;
-                        case "11":
-                            intent = new Intent(context, TicketSendApplyListActivity.class);
-                            intent.setFlags(Intent.FLAG_ACTIVITY_NEW_TASK);
-                            startActivity(intent);
-                            break;
-                        case "12"://套餐审核申请
-                            intent = new Intent(context, PackageApplyListActivity.class);
-                            intent.setFlags(Intent.FLAG_ACTIVITY_NEW_TASK);
-                            startActivity(intent);
-                            break;
-                        // 13 主管开发领用   14开发员开发领用  15办公领用
-                        case "13":
-                            intent = new Intent(context, PackageRelationListActivity.class);
-                            intent.putExtra("sprType", "2");//开发主管
-                            intent.setFlags(Intent.FLAG_ACTIVITY_NEW_TASK);
-                            startActivity(intent);
-                            break;
-                        case "14"://14开发员开发领用
-                            intent = new Intent(context, PackageApplyListActivity.class);
-                            intent.setFlags(Intent.FLAG_ACTIVITY_NEW_TASK);
-                            startActivity(intent);
-                            break;
-                        case "15":
-                            intent = new Intent(context, PackageApplyListActivity.class);
-                            mUserBean = UserInfoUtils.getUser(context);
-                            if (mUserBean==null){
-                                return;
-                            }
-                            if (Common.ROLE3002.equals(mUserBean.getRoleCode())) { //开发主管时才传递参数
-                                intent.putExtra("queryType", "2");
-                            }
-                            intent.setFlags(Intent.FLAG_ACTIVITY_NEW_TASK);
-                            startActivity(intent);
-                            break;
-                        case "16"://提现
-                            intent = new Intent(context, CashApplyDetailActivity.class);
-                            intent.setFlags(Intent.FLAG_ACTIVITY_NEW_TASK);
-                            intent.putExtra("gcaId", map.get("jumpValue"));
-                            startActivity(intent);
-                            break;
-                        case "17"://发票
-                            intent = new Intent(context, InvoiceDetailActivity.class);
-                            intent.setFlags(Intent.FLAG_ACTIVITY_NEW_TASK);
-                            intent.putExtra("oilId", map.get("jumpValue"));
-                            startActivity(intent);
-                            break;
-                    }
-                    //消息id字段,直接标记为已读
-                    readMessage(map.get("msg_id"));
-                }
+
             }
 
             @Override
@@ -418,18 +314,7 @@ public class App extends MobApplication {
         //mPushAgent.setPushIntentServiceClass(MyPushIntentService.class);
     }
 
-    private void readMessage(String messageids) {
-        AsyncHttpUtil.post(M_Url.readMessage, L_RequestParams.readMessage(messageids),
-                new AsyncHttpResponseHandler() {
-                    @Override
-                    public void onFailure(Throwable throwable, String responseString) {
-                    }
 
-                    @Override
-                    public void onSuccess(int statusCode, String responseString) {
-                    }
-                });
-    }
 
     /**
      * 反馈问题

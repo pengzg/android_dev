@@ -89,11 +89,17 @@
             </intent-filter>
         </receiver>
 
-        <activity
-            android:name="com.bikejoy.testdemo.main.MainActivity"
-            android:windowSoftInputMode="adjustPan"/>
-        <!-- 管理员主界面 -->
 
+        <!-- 主界面 -->
+        <activity android:name="com.bikejoy.testdemo.main.MainActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN"/>
+                <category android:name="android.intent.category.LAUNCHER"/>
+            </intent-filter>
+        </activity>
+        ————————————————
+        版权声明：本文为CSDN博主「Manuel_」的原创文章，遵循 CC 4.0 BY-SA 版权协议，转载请附上原文出处链接及本声明。
+        原文链接：https://blog.csdn.net/qq_41755832/java/article/details/89707336
 
         <!-- =====shareSDK  start======= -->
         <!-- 微信分享回调 -->

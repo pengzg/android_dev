@@ -1,6 +1,5 @@
 package com.bikejoy.testdemo.main;
 
-import android.app.ProgressDialog;
 import android.content.Intent;
 import android.os.Bundle;
 import android.support.v4.app.Fragment;
@@ -15,8 +14,6 @@ import android.widget.TextView;
 import com.bikejoy.testdemo.R;
 import com.bikejoy.testdemo.base.BaseActivity;
 import com.bikejoy.testdemo.event.UpdateMessageNumEvent;
-import com.bikejoy.testdemo.popup.SelectShopPopup;
-import com.bikejoy.testdemo.service.DownloadService;
 import com.bikejoy.utils.permissions.PermissionUtils;
 import com.bikejoy.view.NoScrollViewPager;
 

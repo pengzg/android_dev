@@ -9,7 +9,7 @@
     android:orientation="vertical"
     tools:context="com.bikejoy.testdemo.main.MainActivity">
 
-    <include layout="@layout/titlebar2"/>
+
 
     <!--<include layout="@layout/titlebar3"/>-->
 

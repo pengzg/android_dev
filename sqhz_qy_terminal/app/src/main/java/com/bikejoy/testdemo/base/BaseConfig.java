@@ -3,7 +3,6 @@ package com.bikejoy.testdemo.base;
 import android.os.Environment;
 
 import com.bikejoy.utils.UIUtils;
-import com.bikejoy.utils.UserInfoUtils;
 
 /**
  *
@@ -21,8 +20,7 @@ public class BaseConfig {
     public static final boolean isOfficial = true;
     //ds
     //http://yxtest.sqkx.net
-    public static final String URL = UserInfoUtils.getDomainName(UIUtils.getContext());
-            /*isOfficial ? "https://sss.sqkx.net":"https://yxtest.sqkx.net";*/
+    public static final String URL = "";
 
     // true-->显示所有日志
     // false-->关闭所有日志
