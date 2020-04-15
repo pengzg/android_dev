@@ -1,5 +1,5 @@
 <resources>
-    <string name="app_name">上水上品</string>
+    <string name="app_name">testdemo</string>
 
     <string name="url_file_provider">com.bikejoy.testdemo.provider</string>
 

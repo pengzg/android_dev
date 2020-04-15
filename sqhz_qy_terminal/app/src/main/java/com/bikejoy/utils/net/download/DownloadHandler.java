@@ -72,7 +72,7 @@ public final class DownloadHandler {
 
     private static final String PATH_CHALLENGE_VIDEO = Environment
             .getExternalStorageDirectory() + "/Android/data/"+ UIUtils.getContext().getPackageName()+
-            "/files/sssp"; //Environment.getExternalStorageDirectory() + "/DownloadFile";
+            "/files/testdemo"; //Environment.getExternalStorageDirectory() + "/DownloadFile";
     private File mFile;
     private Thread mThread;
     private String mDownloadPath; //下载到本地的路径

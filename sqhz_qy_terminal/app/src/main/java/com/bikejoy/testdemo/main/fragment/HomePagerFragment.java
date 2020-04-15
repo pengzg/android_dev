@@ -42,7 +42,6 @@ import com.bikejoy.view.formatter.MyYAxisValueIntegerFormatter;
 import com.bikejoy.view.risenumber.RiseNumberTextView;
 import com.bikejoy.testdemo.R;
 import com.bikejoy.testdemo.base.BaseFragment;
-import com.bikejoy.testdemo.main.AdministratorMainActivity;
 import com.bikejoy.testdemo.popup.CalendarSelectPopup;
 
 import java.util.ArrayList;

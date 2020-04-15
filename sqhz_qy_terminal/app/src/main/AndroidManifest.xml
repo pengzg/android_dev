@@ -93,11 +93,6 @@
             android:name="com.bikejoy.testdemo.main.MainActivity"
             android:windowSoftInputMode="adjustPan"/>
         <!-- 管理员主界面 -->
-        <activity
-            android:name="com.bikejoy.testdemo.main.AdministratorMainActivity"
-            android:windowSoftInputMode="adjustPan"/>
-
-
 
 
         <!-- =====shareSDK  start======= -->

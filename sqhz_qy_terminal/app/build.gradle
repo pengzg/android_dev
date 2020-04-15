@@ -81,10 +81,10 @@ android {
                 variant.outputs.all {
                     if (variant.name.endsWith("Debug")) {
                         //debug包
-                        outputFileName = "sssp_${defaultConfig.versionName}_${defaultConfig.versionCode}_debug.apk"
+                        outputFileName = "testdemo_${defaultConfig.versionName}_${defaultConfig.versionCode}_debug.apk"
                     } else {
                         //release包
-                        outputFileName = "sssp_${defaultConfig.versionName}_${variant.productFlavors[0].name}.apk"
+                        outputFileName = "testdemo_${defaultConfig.versionName}_${variant.productFlavors[0].name}.apk"
                     }
                 }
             }

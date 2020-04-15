@@ -51,12 +51,6 @@ public class MainActivity extends BaseActivity  {
 
 
 
-    private SelectShopPopup popupShop;
-
-
-    private DownloadService downloadService;//版本下载service
-    private ProgressDialog progressDialog;
-
 
 
     @Override
