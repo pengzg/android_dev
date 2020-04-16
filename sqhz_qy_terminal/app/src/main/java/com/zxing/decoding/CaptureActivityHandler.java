@@ -10,6 +10,7 @@ import android.os.Handler;
 import android.os.Message;
 import android.util.Log;
 
+import com.bikejoy.testdemo.activity.CaptureActivity;
 import com.google.zxing.BarcodeFormat;
 import com.google.zxing.Result;
 import com.bikejoy.testdemo.R;

@@ -167,29 +167,7 @@ public class AsyncHttpUtil<T> {
 					try {
 						//02是签名
 						JSONObject obj = new JSONObject(responseString);
-						if ("411".equals(obj.getString("code"))){
-							UserInfoUtils.setUser(mContext,null);
 
-							Intent intent = new Intent(mContext,LoginActivity.class);
-							intent.setFlags(Intent.FLAG_ACTIVITY_CLEAR_TASK);
-							mContext.startActivity(intent);
-							AppManager.getInstance().finishAllActivity();
-							if(TextUtils.isEmpty(obj.getString("desc"))){
-								UIUtils.Toast("您的登录已过期,请重新登录!");
-							}else{
-								UIUtils.Toast(obj.getString("desc"));
-							}
-							return;
-						}/*else if ("07".equals(obj.getString("repCode"))){
-							UserInfoUtils.setLoginState(mContext, "0");
-
-							Intent intent = new Intent(mContext,LoginActivity.class);
-							intent.setFlags(Intent.FLAG_ACTIVITY_CLEAR_TASK);
-							mContext.startActivity(intent);
-							AppManager.getInstance().finishAllActivity();
-							UIUtils.Toast(obj.getString("repMsg"));
-							return;
-						}*/
 						if (clazz == String.class) {
 							mT = (T) responseString;
 						} else {

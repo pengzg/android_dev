@@ -1297,65 +1297,6 @@ public class DialogUtil {
         showAnimationCustom(view);
     }
 
-    /**
-     * 选择业务员角色弹框
-     *
-     * @param context
-     * @param titleStr
-     * @param list
-     * @param o
-     */
-    public static void showRoleList(Context context, String titleStr, List list,
-                                    final MyCustomDialogListener3 o) {
-        final Dialog dialog = new Dialog(context, R.style.Translucent_NoTitle);
-        final View view = LayoutInflater.from(context).inflate(
-                R.layout.dialog_role_list_layout, null);
-        view.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                dialog.dismiss();
-            }
-        });
-        //初始化控件对象
-        TextView tvTitle = (TextView) view.findViewById(R.id.tv_title);
-        LinearLayout llClose = (LinearLayout) view.findViewById(R.id.ll_close);
-        RecyclerView rvList = view.findViewById(R.id.rv_list);
-
-        if (!TextUtils.isEmpty(titleStr)) {
-            tvTitle.setText(titleStr);
-        }
-        //初始化列表对象
-        RoleListAdapter adapter = new RoleListAdapter();
-        adapter.setList(list);
-        rvList.setAdapter(adapter);
-        rvList.setLayoutManager(new LinearLayoutManager(context));
-        rvList.addItemDecoration(new LinearItemDecoration(10, 10, true));
-        adapter.setListener(new RoleListAdapter.onItemListener() {
-            @Override
-            public void onItem(int i) {
-                if (o != null) {
-                    o.item(i);
-                }
-            }
-        });
-
-        llClose.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                dialog.dismiss();
-            }
-        });
-        // progressDialog.setMessage(msg);
-        dialog.setCanceledOnTouchOutside(true);
-        dialog.setCancelable(false);
-        dialog.requestWindowFeature(Window.FEATURE_NO_TITLE);
-        dialog.getWindow().addContentView(
-                view,
-                new ViewGroup.LayoutParams(ViewGroup.LayoutParams.MATCH_PARENT,
-                        ViewGroup.LayoutParams.MATCH_PARENT));
-        dialog.show();
-        showAnimationCustom(view);
-    }
 
     /**
      * 订单审核功能
