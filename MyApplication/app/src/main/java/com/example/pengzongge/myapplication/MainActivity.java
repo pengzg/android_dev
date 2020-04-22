@@ -53,7 +53,7 @@ public class MainActivity extends AppCompatActivity {
                 break;
             case R.id.jump_order:
 //
-                Intent intent = new Intent(MainActivity.this,OrderAcitivity.class);
+                Intent intent = new Intent(MainActivity.this,OrderActivity.class);
                 startActivity(intent);
 
                 System.out.println("Fclick");
