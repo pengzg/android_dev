@@ -1,5 +1,6 @@
 package com.example.pengzongge.myapplication;
 
+import android.content.Intent;
 import android.graphics.Color;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
@@ -22,6 +23,8 @@ public class MainActivity extends AppCompatActivity {
     Button button;
     @BindView(R.id.tv_desc)
     TextView tvDesc;
+    @BindView(R.id.jump_order)
+    Button JOBtn;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -30,7 +33,7 @@ public class MainActivity extends AppCompatActivity {
         ButterKnife.bind(this);
     }
 
-    @OnClick({R.id.fClick})
+    @OnClick({R.id.fClick,R.id.jump_order})
     public void onViewClicked(View view){
         switch (view.getId()) {
             case R.id.fClick:
@@ -45,6 +48,13 @@ public class MainActivity extends AppCompatActivity {
 //                LinearLayout.LayoutParams lp = new LinearLayout.LayoutParams(LinearLayout.LayoutParams.WRAP_CONTENT, LinearLayout.LayoutParams.WRAP_CONTENT);
 //                lp.setMargins(10, 20, 30, 40);
 //                tvDesc.setLayoutParams(lp);
+
+                System.out.println("Fclick");
+                break;
+            case R.id.jump_order:
+//
+                Intent intent = new Intent(MainActivity.this,OrderAcitivity.class);
+                startActivity(intent);
 
                 System.out.println("Fclick");
                 break;
