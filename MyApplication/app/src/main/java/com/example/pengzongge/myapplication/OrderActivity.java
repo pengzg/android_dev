@@ -6,7 +6,8 @@ import com.example.pengzongge.myapplication.base.BaseActivity;
 
 import butterknife.ButterKnife;
 
-public class OrderAcitivity extends BaseActivity {
+public class OrderActivity extends BaseActivity {
+
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
