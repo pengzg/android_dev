@@ -15,4 +15,16 @@ public class OrderActivity extends BaseActivity {
         setContentView(R.layout.order);
         ButterKnife.bind(this);
     }
+
+    private void getOrderList(){
+        OkHttpClicent okHttpClient=new OkHttpClient();
+
+//        Request request=new Request.Builder().url(url).build();
+//
+//        Call call=okHttpClient.newCall(request);
+
+
+
+    }
+
 }
