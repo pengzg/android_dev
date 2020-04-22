@@ -17,7 +17,7 @@ public class OrderActivity extends BaseActivity {
     }
 
     private void getOrderList(){
-        OkHttpClicent okHttpClient=new OkHttpClient();
+//        OkHttpClicent okHttpClient=new OkHttpClient();
 
 //        Request request=new Request.Builder().url(url).build();
 //
