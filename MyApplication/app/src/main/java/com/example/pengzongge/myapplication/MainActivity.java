@@ -1,10 +1,12 @@
 package com.example.pengzongge.myapplication;
 
+import android.graphics.Color;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.Gravity;
 import android.view.View;
 import android.widget.Button;
+import android.widget.TextView;
 import android.widget.Toast;
 
 import java.time.Duration;
@@ -17,6 +19,8 @@ public class MainActivity extends AppCompatActivity {
 
     @BindView(R.id.fClick)
     Button button;
+    @BindView(R.id.tv_desc)
+    TextView tvDesc;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -34,6 +38,9 @@ public class MainActivity extends AppCompatActivity {
                 Toast toast=Toast.makeText(MainActivity.this,"Toast提示消息",Toast.LENGTH_SHORT    );
                 toast.setGravity(Gravity.CENTER, 0, 0);
                 toast.show();
+                tvDesc.setText("这是什么鬼啊");
+                tvDesc.setTextColor(Color.RED);
+
                 System.out.println("Fclick");
                 break;
             default:
