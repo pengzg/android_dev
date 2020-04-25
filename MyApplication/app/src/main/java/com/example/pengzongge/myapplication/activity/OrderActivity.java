@@ -1,7 +1,8 @@
-package com.example.pengzongge.myapplication;
+package com.example.pengzongge.myapplication.activity;
 
 import android.os.Bundle;
 
+import com.example.pengzongge.myapplication.R;
 import com.example.pengzongge.myapplication.base.BaseActivity;
 
 import butterknife.ButterKnife;

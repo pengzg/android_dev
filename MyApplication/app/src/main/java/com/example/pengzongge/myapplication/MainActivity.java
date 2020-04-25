@@ -7,11 +7,10 @@ import android.os.Bundle;
 import android.view.Gravity;
 import android.view.View;
 import android.widget.Button;
-import android.widget.LinearLayout;
 import android.widget.TextView;
 import android.widget.Toast;
 
-import java.time.Duration;
+import com.example.pengzongge.myapplication.activity.OrderActivity;
 
 import butterknife.BindView;
 import butterknife.ButterKnife;
@@ -53,7 +52,7 @@ public class MainActivity extends AppCompatActivity {
                 break;
             case R.id.jump_order:
 //
-                Intent intent = new Intent(MainActivity.this,OrderActivity.class);
+                Intent intent = new Intent(MainActivity.this, OrderActivity.class);
                 startActivity(intent);
 
                 System.out.println("Fclick");
