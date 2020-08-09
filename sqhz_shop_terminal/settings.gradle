@@ -1,1 +1,0 @@
-include ':app', ':library', ':MPChartLib2', ':PushSDK', ':pickerview', ':djkeyboard', ':magicindicator', ':taglibrary'
